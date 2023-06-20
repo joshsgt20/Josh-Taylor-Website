@@ -1,0 +1,1484 @@
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.transition-slide,.transition-slide2,.transition-slide3,.transition-slide4,.transition-slide5  {
+  position: relative;
+  padding: 0;
+  margin:0;
+  background-color: rgb(32, 32, 32);
+  width: 20%;
+  height: 100%;
+  transform-origin: top left;
+  transform: scaleY(0) skewX(0);
+}
+
+.transition-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding:0;
+  margin:0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 100;
+  pointer-events: none;
+  display: flex;
+}
+
+.typewriter1, .typewriter2, .typewriter3, .typewriter4{
+  overflow: hidden;
+  border-right: .15em solid white; 
+  white-space: nowrap; 
+}
+
+.typewriter1{
+  animation: 
+    typing 4s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+.typewriter2{
+  animation: 
+  typing 2.5s steps(30, end),
+  blink-caret .5s step-end infinite;
+}
+
+.typewriter3{
+  animation: 
+  typing 3.5s steps(30, end),
+  blink-caret .5s step-end infinite;
+}
+
+.typewriter4{
+  animation: 
+  typing 2s steps(30, end),
+  blink-caret .5s step-end infinite;
+}
+
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+  
+}
+
+
+.rect1, .bottomrect1, .shadow1, .bottomshadow1{
+  animation: 
+    rectanimation1 6s infinite;
+}
+.rect2, .bottomrect2, .shadow2, .bottomshadow2{
+  animation: 
+  rectanimation2 8s infinite;
+}
+
+.rect3, .bottomrect3, .shadow3, .bottomshadow3{
+  animation: 
+  rectanimation3 10s infinite;
+}
+
+.rect4, .bottomrect4, .shadow4, .bottomshadow4{
+  animation: 
+  rectanimation4 12s infinite;
+}
+
+.rect5, .bottomrect5, .shadow5, .bottomshadow5{
+  animation: 
+  rectanimation5 14s infinite;
+}
+
+
+@keyframes rectanimation1 {
+  from, to { x: 30%;}
+  50% { x: 27%;}
+}
+
+
+@keyframes rectanimation2 {
+  from, to { x: 32%;}
+  50% { x: 35%;}
+}
+
+@keyframes rectanimation3 {
+  from, to { x: 12%;}
+  50% { x: 9%;}
+}
+
+
+@keyframes rectanimation4 {
+  from, to { x: 20%;}
+  50% { x: 17%;}
+}
+
+
+@keyframes rectanimation5 {
+  from, to { x: 8%;}
+  50% { x: 11%;}
+}
+
+
+.RectangleContainer{
+  position:absolute; 
+  top: -40%; 
+  right:-40%; 
+  z-index: -5; 
+  overflow: hidden;
+}
+
+.FooterRectangleContainer{
+  position:absolute; 
+  top: 10%; 
+  right:-35%; 
+  z-index: -1;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Slider{
+	background: linear-gradient(-45deg, #2541B2, #1E1E1E, #1E1E1E, #2541B2);
+	background-size: 200% 200%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+p, li, input, textarea {
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+ 
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  color: white;
+  background-color: rgb(32, 32, 32);
+  padding: 1.5vh 7vw;
+  border-bottom: 0.1vh solid rgb(53, 179, 252);
+  position: fixed;
+  z-index: 100;
+  min-height: 6vh;
+}
+
+.nav-links {
+  display: none;
+}
+.cursor {
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid rgb(53, 179, 252);
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transition-property: background, transform;
+  transform-origin: 100% 100%;
+  z-index: 1000;
+  backdrop-filter: grayscale;
+  display: none;
+}
+
+.link-grow {
+  transform: scale(2.5);
+  background-color: rgba(255, 255, 255, 0.116);
+  border: 0.2vh solid rgb(53, 179, 252);
+  display: none;
+}
+
+.hovered-link {
+  color: white;
+}
+
+section, footer{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 4vh 8vw;
+  margin: auto;
+  background-attachment: fixed;
+  object-fit: cover;
+  color: black;
+  border-bottom: 0.1vh solid #00A5CF;
+  background-color: #fafafa;
+}
+
+#Title {
+  font-size: 1.8rem;
+  font-weight: 900;
+  font-family: 'Lato';
+  margin: .5vh 0vw;
+}
+
+.Hamburger {
+  position: relative;
+  z-index: 10;
+  top: 0%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  left: 20%;
+}
+
+.MobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgb(29, 29, 29);
+  color: white;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  list-style: none;
+  padding-top: 4rem;
+  transition: 1s;
+  opacity: 0.95;
+  z-index: 9;
+}
+
+
+
+.showMenu {
+  transform: translateY(0);
+}
+
+li {
+  padding: .5rem 1rem;
+}
+
+.MobileMenuLink {
+  display: inline;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  margin-left: 5vw;
+}
+
+.MobileMenuLink:hover {
+  color: rgb(53, 179, 252);
+  transition: 0.3s;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+footer {
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  color: rgb(225, 225, 225);
+  background-color: rgb(32, 32, 32);
+  padding: 1.5vh 8vw;
+  min-height: 10vh;
+  border-top: 0.1vh solid rgb(53, 179, 252);
+  background: linear-gradient(-45deg, #2541B2, #1E1E1E, #1E1E1E, #1E1E1E);
+  background-size: 200% 200%;
+  animation: gradient 15s ease infinite;
+  padding-bottom: 5vh;
+}
+
+
+.FooterDiv{
+  width: 100%;
+  margin-top: 5vh;
+}
+
+.FooterDiv ul{
+  margin: 0;
+  margin-left: 0vw;
+  columns: 2;
+  margin-bottom: 2vh
+}
+
+
+.FooterDiv li{
+  margin: 0vh 0vw;
+  padding: 0;
+}
+.FooterSocials{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 2vh
+}
+
+.FooterSocials .fa{
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 0%;
+    background: transparent;
+    color: rgb(225, 225, 225);
+    padding: 1vw;
+    justify-content: center;
+    margin-top: 3vh;
+    margin-right: 3vw;
+  
+}
+
+
+.ContactSocials .fa{
+  font-size: 1.7rem;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 0%;
+  background: transparent;
+  justify-content: center;
+  margin-right: 2vw;
+  margin-top: 2vh;
+}
+.FooterDiv a{
+  color: rgb(225, 225, 225);
+  font-size: .8rem;
+}
+
+.FooterDiv h2{
+  transition: .3s;
+}
+.FooterDiv h2:hover{
+  color:rgb(53, 179, 252);
+  transition: .3s;
+}
+
+.FooterLinks{
+  list-style: none; 
+  display: flex; 
+  justify-content: flex-start;
+  margin: 3vh 0vw;
+  color: white;
+}
+
+.FooterLinks a{
+  text-decoration: none;
+  transition: .3s;
+}
+
+.FooterLinks a:hover{
+  color: rgb(53, 179, 252);
+  text-decoration: none;
+  transition: .3s;
+}
+
+
+.FooterSocials .fa:hover{
+  text-decoration: none;
+  background: transparent;
+  color: rgb(53, 179, 252);
+
+
+}
+input[type=text],input[type=email], textarea {
+  width: 100%;
+  padding: 0vh 0vw;
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  box-sizing: border-box;
+  margin: .5vh 0vw;
+  resize: vertical;
+  z-index: 1;
+  font-family: "Poppins", sans-serif;
+  background-color: inherit;
+  color: white;
+  
+}
+::placeholder {
+  color: rgb(225, 225, 225);
+  opacity: 1;
+}
+
+button[type=submit] {
+  color: white;
+  padding: 1vh 3vw;
+  width: 35%;
+  border: none;
+  border-radius: .5vw;
+  transition: 0.3s;
+  background-color: rgb(32, 32, 32);
+  font-family: "Poppins", sans-serif;
+  border: 0.3vh solid rgb(53, 179, 252);
+  box-shadow: 0rem 0rem 0.5rem rgb(53, 179, 252); 
+  color: white;
+  margin-top: 4vh;
+  background-image: linear-gradient(rgb(53, 179, 252), rgb(53, 179, 252));
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  transition: background-size 1s 0s;
+}
+
+
+button[type=submit]:hover {
+  transition: 0.3s;
+  color: white;
+  background-color: rgb(53, 179, 252);
+}
+
+
+.two_fields{
+  display: block;
+  justify-content: flex-start;
+}
+
+.small_fields, .textfield{
+  width: 100%;
+  margin-right: 0;
+  margin-top: 2vh;
+  border-bottom: 0.1vh solid rgb(53, 179, 252);
+}
+
+form{
+  margin: 4vh 0;
+}
+
+.dark-background{
+  background-color: rgb(29, 29, 29);
+   color: white;
+   background: linear-gradient(-45deg, #2541B2, #1E1E1E, #1E1E1E, #2541B2);
+   background-size: 200% 200%;
+   animation: gradient 15s ease infinite;
+}
+
+.CardContainer{
+  display: flex;
+  justify-content: center;
+  height: auto;
+flex-wrap: wrap;
+margin: 4vh 0;
+  
+}
+.col-md-12{
+  width: 80vw;
+  height: 24vh;
+  padding: 1vw;
+  margin: 1vh 0vh;
+  }
+
+
+.card {
+width: 100%; 
+display: block; 
+transform-style: preserve-3d; 
+transition: 0.3s;
+height: 100%;
+box-shadow: 0vw 1vw 1.5vw 1vw #a6a6a6;
+justify-content: center;
+text-align: center;
+border-radius: 3vw;
+padding: 1vw;
+
+}
+
+.card:hover{
+scale: 1.05;
+}
+
+
+.dcard {
+position: relative; 
+display: block;
+perspective: 3000px; 
+width: 100%;
+height: 100%;
+justify-content: center;
+text-align: center;
+
+}
+
+
+.frame {
+display: block; 
+width: 100%; 
+height: 100%;
+position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+.card-content {
+color: black; 
+position: absolute;
+top: 50%; left: 50%; 
+transform: translateY(-50%) translateX(-50%) translateZ(100px); 
+text-align: center; 
+z-index: 4;
+width: 95%;
+
+}
+
+.card-content img{
+  width: 35%;
+}
+.trigger {
+position: absolute; 
+height: 33.333333%; width: 50%; 
+display: block; 
+z-index: 2; 
+transform: translateY(-50%) translateX(-50%); 
+
+
+
+
+&:nth-child(1){  left: 0%; top: 0%;
+  &:hover ~ .card {transform: rotateY(8deg) rotateX(-5deg); scale:1.03;}
+ }
+&:nth-child(2){  left: 50.333333%; top: 0%;
+  &:hover ~ .card {transform: rotateY(0deg) rotateX(-5deg);scale:1.03;}
+ }
+&:nth-child(3){  left: 99.666666%; top: 0%;
+  &:hover ~ .card {transform: rotateY(-8deg) rotateX(-5deg);scale:1.03;}
+ }
+&:nth-child(4){  left: 0%; top: 33.333333%;
+  &:hover ~ .card {transform: rotateY(8deg);scale:1.03;}
+ }
+&:nth-child(5){  left: 50.333333%; top: 33.333333%;
+  &:hover ~ .card {transform: rotateY(0deg) rotateX(0deg);scale:1.03;}
+ }
+&:nth-child(6){  left: 99.666666%; top: 33.333333%;
+  &:hover ~ .card {transform: rotateY(-8deg) rotateX(0deg);scale:1.03;}
+ }
+&:nth-child(7){  left: 0%; top: 66.666666%;
+  &:hover ~ .card {transform: rotateY(8deg) rotateX(5deg);scale:1.03;}
+ }
+&:nth-child(8){  left: 50.333333%; top: 66.666666%;
+  &:hover ~ .card {transform: rotateY(0deg) rotateX(5deg);scale:1.03;}
+ }
+&:nth-child(9){  left: 99.666666%; top: 66.666666%;
+  &:hover ~ .card {transform: rotateY(-8deg) rotateX(5deg);scale:1.03;}
+ }
+}
+
+/* Home Page CSS */
+
+.Welcome {
+  font-size: 1.5rem;
+  color: white;
+  z-index: 52;
+  font-family: 'Poppins', sans-serif;
+}
+
+.Welcome span {
+  color: rgb(53, 179, 252);
+  text-shadow: 0rem 0rem 0.05rem rgb(232, 244, 255);
+  
+}
+
+span{
+  color: rgb(53, 179, 252);
+
+}
+
+.Intro_Text p {
+  font-size: 1.1rem;
+  color: white;
+  z-index: 2;
+  margin: 1vh 0;
+}
+
+.SocialMedia {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.SocialMedia .fa{
+  font-size: 2.2rem;
+  text-align: center;
+  text-decoration: none;
+  background: transparent;
+  color: white;
+  padding: 1.2vw;
+  justify-content: center;
+  border: 0.3vh solid rgb(53, 179, 252);
+  box-shadow: 0rem 0rem 0.5rem rgb(53, 179, 252); 
+  margin-top: 3vh;
+  width: 11vw;
+}
+
+.SocialMedia .fa:hover, .MobileMenu .fa:hover {
+  background-color: rgb(53, 179, 252);
+  transition: 0.3s;
+transform: scale(1.1);
+}
+
+.SocialMedia .fa-facebook,
+.SocialMedia .fa-linkedin,
+.SocialMedia .fa-instagram,
+.SocialMedia .fa-envelope,
+.MobileMenu .fa {
+  background: transparent;
+  color: white;
+  padding: 1.2vw;
+  justify-content: center;
+  border: 0.3vh solid rgb(53, 179, 252);
+
+}
+
+.MobileMenu .fa{
+  margin-left: 5vw;
+  font-size: 3rem;
+  box-shadow: 0rem 0rem 0.5rem rgb(53, 179, 252); 
+    text-align: center;
+    justify-content: center;
+    width: 15vw;
+}
+
+
+
+
+.Slider {
+  padding: 13vh 5vw;
+  left: 0;
+  width: 100%;
+  min-height: 75vh;
+  z-index: -4;
+  border-bottom: 0.1vh solid rgb(53, 179, 252);
+}
+
+
+.GridContainer{
+ display: flex;
+ flex-direction: column;
+ margin: 3vh 0;
+}
+
+
+
+.GridContainer img{
+  width: 90%;
+  margin: 2vh auto;
+
+}
+
+.GridText{
+margin: 2vh 0;;
+}
+
+.row{
+  display: flex;
+  flex-direction: column;
+}
+
+
+/*Contact page CSS */
+
+.Contact-Container {
+  position: relative;
+  align-items: center;
+  overflow: hidden;
+  color: white;
+  width: 100%;
+  z-index: 0;
+  margin-top: 6vh
+
+}
+
+.ContactButton{
+  border: none;
+  margin: 0;
+  background-color: transparent;
+  background-image: linear-gradient(rgb(53, 179, 252), rgb(53, 179, 252));
+  background-position: 0 80%;
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  transition: background-size 1s 1.5s ease;
+  padding: .5vh 2vw;
+}
+
+.ContactButton.show {
+  background-size: 100% 100%;
+}
+
+
+.ContactImage {
+  width: 70%;
+  margin: 10% 15%;;
+  opacity: 1;
+  transform: translateY(0);
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
+  box-shadow: 0vw 0vw 1vw .5vw #151515;
+}
+
+.Contact-Text{
+  z-index: 2;
+  margin: 1vh 0vw;;
+  
+}
+
+.TextContainer h1{
+  font-size: 2rem;
+}
+
+.TextContainer h2{
+  font-size: 2rem;
+  
+}
+
+.TextContainer h3{
+  font-size: 1.5rem;
+}
+
+.Contact-Text a{
+  color: white;
+  text-decoration: none;
+  transition: .3s;
+}
+.Contact-Text a:hover{
+  color: rgb(53, 179, 252);
+  transition: .3s;
+}
+
+.Contact-Text a:hover .arrow{
+  color: rgb(53, 179, 252);
+  transition: .3s;
+}
+
+
+
+.highlight-animation {
+  display: inline;
+  z-index: -1;
+  background-image: linear-gradient(rgb(53, 179, 252), rgb(53, 179, 252));
+  background-position: 0 80%;
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  transition: background-size 3s 1.5s ease;
+  color: black;
+}
+
+.highlight-animation.show {
+  background-size: 100% 100%;
+}
+
+
+.arrow{
+  color:rgb(53, 179, 252)
+}
+.ContactInfo{
+  display: flex;
+  flex-direction: column;
+}
+
+.ContactInfo img {
+  width: 80%;
+  margin: 3vh 10%;
+}
+.ContactInfo a{
+  color:rgb(32, 32, 32);
+  transition: .3s;
+}
+
+.ContactInfo a:hover{
+color: rgb(53, 179, 252);
+transition: .3s;
+}
+
+
+
+@media screen and (min-width: 650px) {
+
+  body{
+    cursor: none;
+  }
+  .cursor {
+    display: block;
+  }
+  
+  form,label,input[type=text],input[type=email], textarea {
+    cursor: none;
+  }
+  
+  button[type=submit] {
+    cursor: none;
+  }
+  
+  button[type=submit]:hover {
+cursor: none;
+  }
+
+   .nav-links li:hover, .nav-links, .nav-links a, nav, .nav-links a:hover, .SocialMedia .fa:hover{
+    cursor: none;
+   }
+
+   .SocialMedia {
+    margin: 0;
+  }
+
+  .linkhover:hover{
+    cursor: none;
+  }
+  
+.SocialMedia .fa{
+  font-size: 2.4rem;
+  width: 7vw;
+  padding: 1vw;
+}
+  .link-grow {
+    display: block;
+  }
+
+  .RectangleContainer{
+    top: -40%; 
+    right:-45%; 
+  }
+
+  .FooterRectangleContainer{
+    top: -15%; 
+    right:-35%; 
+  }
+
+  section{
+    padding: 6vh 10vw;
+  }
+
+  footer{
+    padding: 2vh 10vw;
+    padding-bottom: 6vh;
+  }
+  .MobileMenu,
+  .Hamburger {
+    display: none;
+  }
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    color: white;
+  }
+
+  .nav-links:hover {
+    color: rgb(53, 179, 252);
+  }
+
+  #Title {
+    font-size: 1.6rem;
+  }
+
+  .nav-links li {
+    padding: 0vh 3vw;
+    font-size: .9rem;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .nav-links a:hover {
+    color: rgb(53, 179, 252);
+    transition: 0.3s;
+  }
+
+  .Welcome {
+    font-size: 1.8rem;
+  }
+
+  .Intro_Text p {
+    font-size: 1.2rem;
+    margin: 3vh 0;
+  }
+
+
+  .ContactInfo{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3vh 0;
+  }
+  
+
+  .ContactInfo img {
+    width: 40%;
+    margin: 0;
+    padding: 1vw
+  }
+
+  h1 {
+    font-size: 1.6rem;
+
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+  
+  p, li, input, textarea {
+    font-size: 1rem;
+    padding-bottom: 2%;
+  }
+
+  .FooterSocials .fa{
+    font-size: 1.8rem;
+  
+}
+
+.FooterDiv a{
+  font-size: 1rem;
+}
+
+  input[type=text],input[type=email], textarea {
+    width: 100%;
+    padding: .5vh 0vw;
+    border-radius: .5vw;
+    box-sizing: border-box;
+    margin: 1vh 0vw;
+    resize: vertical;
+    z-index: 1;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  button[type=submit] {
+    color: white;
+    padding: 1vh 0vw;
+    width: 40%;
+    border-radius: .5vw;
+    transition: 0.3s;
+  }
+  
+
+  
+  .two_fields{
+      display: flex;
+      justify-content: end;
+      margin: 2vh 0;
+
+
+  }
+  
+  .small_fields{
+      width: 100%;
+      margin: 0;
+  
+}
+
+.left_field{
+  margin-right: 2vw;;
+}
+
+.right_field{
+  margin-left: 2vw;;
+}
+.CardContainer{
+  display: flex;
+  justify-content: space-between;
+  margin: 4vh 0;
+  
+}
+.col-md-12{
+  width: 24vw;
+  height: 17vh;
+  padding: 0vw;
+  margin: 0vh 0vh;
+  }
+
+  .card {
+    border-radius: 1vw;
+    }
+
+    .card-content img{
+      width: 60%;
+    }
+
+    .GridContainer{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+      "Text1 Image1"
+      "Image2 Text2"
+      "Text3 Image3"
+      "Image4 Text4";
+     }
+     
+     
+     .GridText{
+      padding: 2vw;
+     }
+     
+     .GridContainer img{
+       width: 90%;
+       margin: 2vh auto;
+     }
+     
+
+     .Contact-Container{
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+
+     }
+
+     .ContactSocials .fa{
+      font-size:1.7rem;
+    }
+     .ContactImage {
+      width: 45%;
+      margin: 0% 0%;
+    }
+    
+    .Contact-Text{
+      z-index: 2;
+      margin: 1vh 0vw;;
+      
+    }
+    .TextContainer{
+      margin: 2vh 0vw
+    }
+    
+    .TextContainer h1{
+      font-size: 1.8rem;
+    }
+    
+    .TextContainer h2{
+      font-size: 1.7rem;
+    }
+    
+    .TextContainer h3{
+      font-size: 1.6rem;
+    }
+}
+
+/* Laptop Screen size */
+@media screen and (min-width: 1000px) {
+ 
+  #Title {
+    font-size: 2.3rem;
+    margin: 1vh 0vw;
+  }
+
+  h1 {
+    font-size: 2rem;
+
+  }
+
+  h2 {
+    font-size: 1.6rem;
+
+  }
+  
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  p, li, input, textarea {
+    font-size: 1.2rem;
+  }
+
+
+
+.FooterDiv a{
+  font-size: 1.2rem;
+}
+
+  .nav-links li {
+    padding: 0vh 3vw;
+    font-size: 1.2rem;
+    cursor: none;
+  }
+  
+
+  section{
+    padding: 6vh 12vw;
+  }
+
+  footer{
+    padding: 2vh 12vw;
+    padding-bottom: 6vh;
+  }
+
+  /* Home Page CSS */
+
+  .Slider {
+    display: grid;
+    padding: 10vh 6vw;
+    align-items: center;
+    grid-template-columns: 1.8fr 1fr;
+    grid-template-areas:
+      "WelcomeText WelcomeText"
+      "IntroText SocialMediaIcons";
+  }
+
+  nav {
+    padding: 0vh 7vw;
+  }
+
+  .Intro_Text p{
+    font-size: 1.4rem;
+  }
+
+  .Welcome {
+    font-size: 2.6rem;
+    padding: 5vh 0vw;
+  }
+
+
+  .SocialMedia .fa {
+    font-size: 2.6rem;
+    width: 8vw;
+    padding: 1.3vw;
+    
+  }
+ 
+  .CardContainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 5vh 0;;
+    
+  }
+  .col-md-12{
+    width: 23vw;
+    height: 20vh;
+    padding: 0vw;
+    margin: 0vh 0vh;
+    }
+
+      .Contact-Text{
+        z-index: 2;
+        margin: 2vh 0vw;;
+        
+      }
+      
+      .TextContainer h1{
+        font-size: 2.6rem;
+      }
+      
+      .TextContainer h2{
+        font-size: 2.4rem;
+      }
+      
+      .TextContainer h3{
+        font-size: 1.8rem;
+      }
+
+       
+     .ContactImage {
+      width: 40%;
+    }
+    
+    .Contact-Container{
+      margin-bottom: 8vh;
+    }
+
+    .Contact-Text{
+      margin: 2vh 0vw;;
+      
+    }
+    
+}
+
+
+
+@media screen and (min-width: 1200px) {
+  #Title {
+    font-size: 2.7rem;
+  }
+
+  .RectangleContainer{
+    top: -30%; 
+    right:-40%; 
+
+  }
+
+  .FooterRectangleContainer{
+    top: 10%; 
+    right:-35%; 
+  }
+
+  .Welcome {
+    font-size: 2.5rem;
+    padding: 1.5vh 0vw;
+  }
+
+  .Intro_Text{
+    font-size: 1.9rem;
+  }
+  .nav-links li {
+    font-size: 1.2rem;
+  }
+
+  .two_fields{
+    margin: 1.5vh 0;
+
+
+}
+
+.TextContainer h1{
+  font-size: 2.5rem;
+}
+
+.TextContainer h2{
+  font-size: 2.2rem;
+}
+
+.TextContainer h3{
+  font-size: 2rem;
+}
+
+
+.Contact-Text{
+  margin: 2vh 0vw;;
+  
+}
+
+.SocialMedia .fa {
+  width: 7vw;
+  margin: 0vh 1vw;
+}
+
+.col-md-12{
+  width: 22vw;
+  height: 22vh;
+  }
+.card-content img{
+  width: 50%;
+}
+.ContactSocials .fa{
+  font-size:2rem;
+}
+}
+
+/* Desktop Screen size */
+@media screen and (min-width: 1650px) {
+  section{
+    padding: 8vh 15vw;
+  }
+
+  footer{
+    padding: 2vh 15vw;
+    padding-bottom: 5vh;
+    
+
+  }
+
+  .RectangleContainer{
+    top: -20%; 
+    right:-40%; 
+
+  }
+
+    .FooterRectangleContainer{
+    top: 5%; 
+    right:-35%; 
+  }
+
+    .Slider {
+    display: grid;
+    padding: 10vh 10vw;
+    align-items: center;
+    grid-template-columns: 1.9fr 1fr;
+    grid-template-areas:
+      "WelcomeText WelcomeText"
+      "IntroText SocialMediaIcons"
+  }
+
+
+  .SocialMedia .fa {
+    width: 4.5vw;
+    font-size: 3.2rem;
+    padding: 1vw
+  }
+  
+  nav {
+    padding: 0vh 10vw;
+  }
+  .Welcome {
+    font-size:3.5rem;
+    padding: 1.5vh 0vw;
+  }
+
+  .Intro_Text p{
+    font-size: 2rem;
+  }
+
+
+  .nav-links li {
+    font-size: 1.5rem;
+  }
+  #Title {
+    font-size: 3.5rem;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+
+  }
+
+  h2 {
+    font-size: 2rem;
+
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  p, input, textarea {
+    font-size: 1.3rem;
+  }
+
+  .FooterDiv a{
+    font-size: 1.3rem;
+  }
+
+  .CardContainer{
+    display: flex;
+    height: auto;
+  flex-wrap: wrap;
+  margin: 7vh 0;
+    
+  }
+  .col-md-12{
+    width: 20vw;
+    height: 30vh;
+    margin: 0vh 0vh;
+    }
+    .card-content img{
+      width: 50%;
+    }
+    .card {
+      transition: 0.3s;
+      height: 100%;
+      box-shadow: 0vw 1vw 1.5vw .5vw #a6a6a6;
+      justify-content: center;
+      text-align: center;
+      border-radius: 1vw;
+      
+      }
+
+      .GridContainer{
+        display: grid;
+        grid-template-columns: 1fr .5fr 1fr;
+        grid-template-areas: 
+        "Text1 . Image1"
+        "Image2 . Text2"
+        "Text3 . Image3"
+        "Image4 . Text4";
+       }
+
+       .GridText{
+        padding: 1vw;
+       }
+       
+       .GridContainer img{
+         width: 90%;
+         margin: auto;
+       }
+
+.Contact-Container{
+  margin-top: 5vh;
+}
+       .TextContainer h1{
+        font-size: 3.5rem;
+      }
+      
+      .TextContainer h2{
+        font-size: 3rem;
+      }
+      
+      .TextContainer h3{
+        font-size: 2.8rem;
+      }
+       .ContactImage {
+        width: 35%;
+      }
+      
+      .Contact-Text{
+        margin: 2vh 0vw;;
+        
+      }
+       
+      .ContactInfo{
+        justify-content: space-between;
+        align-items: center;
+        margin: 5vh 0;
+      }
+      
+    
+      .ContactInfo img {
+        width: 35%;
+        margin: 0;
+        padding: 1vw
+      }
+
+      .ContactSocials .fa{
+        font-size:2.2rem;
+      }
+}

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josh Taylor - Portfolio Contact</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+  <div class="transition-container">
+    <div class="transition-slide"></div>
+    <div class="transition-slide2"></div>
+    <div class="transition-slide3"></div>
+    <div class="transition-slide4"></div>
+    <div class="transition-slide5"></div>
+  </div>
+
+<div class="cursor"></div>
+<header>
+  <nav>
+    <h1 id="Title"><span>JT</span> Digital <span>&lt;/&gt;</span> </h1>
+    <ul class="nav-links linkhover" id="Menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="My_Work.html">My Work</a></li>
+        <li><a href="Experience.html">Experience</a></li>
+        <li><a href="Contact.html">Contact</a></li>  
+    </ul>
+    <div class="Hamburger" id="Hamburger_Icon" onclick="AnimateMenu(this)">
+        <span class="menuIcon material-icons">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+        </span>
+    
+    </div>
+
+    <ul class="MobileMenu">
+      <li><a class="MobileMenuLink linkhover" href="index.html" onclick="toggleanimation()">Home</a></li>
+      <li><a class="MobileMenuLink linkhover" href="My_Work.html" onclick="toggleanimation()">My Work</a></li>
+      <li><a class="MobileMenuLink linkhover" href="Experience.html" onclick="toggleanimation()">Experience</a></li>
+      <li><a class="MobileMenuLink linkhover" href="Contact.html" onclick="toggleanimation()">Contact</a></li>
+      <br>
+      <li><a href="https://twitter.com/JT_WebDesigns" target="_blank" class="fa fa-twitter linkhover"></a></li><br>
+      <li><a href="https://www.linkedin.com/in/joshsgt20/" target="_blank" class="fa fa-linkedin linkhover"></a></li><br>
+      <li><a href="https://www.instagram.com/jt_webdesigns/" target="_blank" class="fa fa-instagram linkhover"></a></li>
+  </ul>
+
+</nav>
+    
+
+
+    </header>
+
+
+    <style>
+
+
+input[type=text],input[type=email], textarea {
+  width: 100%;
+  padding: 0vh 0vw;
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  box-sizing: border-box;
+  margin: .5vh 0vw;
+  resize: vertical;
+  z-index: 1;
+  font-family: "Poppins", sans-serif;
+  background-color: inherit;
+  color: white;
+  
+}
+
+footer{
+  background: linear-gradient(-45deg, #2541B2, #1E1E1E, #1E1E1E, #1E1E1E);
+}
+
+::placeholder {
+  color: rgb(195, 195, 195);
+  opacity: 1;
+}
+
+button[type=submit] {
+  color: white;
+  padding: 1vh 3vw;
+  width: 35%;
+  border: none;
+  border-radius: .5vw;
+  transition: 0.3s;
+  background-color: rgb(32, 32, 32);
+  font-family: "Poppins", sans-serif;
+  border: 0.3vh solid rgb(53, 179, 252);
+  box-shadow: 0rem 0rem 0.5rem rgb(53, 179, 252); 
+  color: white;
+  margin-top: 2vh;
+  background-image: linear-gradient(rgb(53, 179, 252), rgb(53, 179, 252));
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  transition: background-size 1s 0s;
+}
+
+button[type=submit]:hover {
+  transition: 0.3s;
+  color: white;
+  background-size: 100% 100%;
+}
+
+.two_fields{
+    display: block;
+    justify-content: flex-start;
+}
+
+.small_fields, .textfield{
+    width: 100%;
+    margin-right: 0;
+    margin-top: 2vh;
+    border-bottom: 0.1vh solid rgb(53, 179, 252);
+}
+
+form{
+    margin: 4vh 0;
+}
+
+.Contact-Container{
+  background-color: transparent;
+  background-image: linear-gradient(transparent,transparent);
+  margin: 0;
+  padding: 0;
+  padding-top: 10vh;
+}
+
+    </style>
+
+
+    <div data-barba="wrapper" style="overflow: hidden;">
+        <main data-barba="container" data-barba-namespace="Contact" style="overflow: hidden;">
+
+          <section class="dark-background">
+<div class="Contact-Container" style="margin: 0; width: 100%;">
+              <div class="TextContainer">
+           
+           <h1 class="Contact-Text">Think I can help?</h1> 
+            <h2 class="Contact-Text"><span class="highlight-animation">
+              Digital Design<br>
+              Marketing<br>
+              Website creation<br>
+              Job opportunities<br>
+              And more...<br></span></h2>
+
+             <h3 class="Contact-Text"><a href="#ContactForm">Contact me below <span class="arrow"> &#8680;</span></a></h3>
+
+            </div>
+            <img src="Images\Josh_Taylor.jpeg" class="ContactImage">
+
+ 
+     </div>
+
+
+   
+            <p> <strong>Email:</strong><a href="mailto:joshsgt2004@gmail.com"> Joshsgt2004@gmail.com </a><br><br>
+              <strong>LinkedIn: </strong> <a href="https://www.linkedin.com/in/joshsgt20/" target="_blank">Joshsgt20</a><br><br>
+              <strong>Instagram:</strong> <a href="https://www.instagram.com/jt_webdesigns/"target="_blank">@jt_webdesigns</a><br><br>
+          <strong>Twitter:</strong> <a href="https://twitter.com/JT_WebDesigns"target="_blank">@jt_webdesigns</a></p>
+
+          <h2>Freelance Work</h1>
+              <p>I first started freelancing back in 2019 - completing this part time around my university course and job as a barista. Working privately with people and businesses 
+                is something I've always wanted to do as full time work ever since, and the experience I've gained so far has made this easier.
+              </p>
+              <p>I've worked in agencies, small businesses and large corporations since I finished university, which has given me a stronger understanding
+              of the best techniques and methods to massiviely improve online performance.</p>
+            <p>So, if you think I could support you with some digital work, why not send me a message?</p>
+            <p>I'm open to any freelance opportunities, whether this is on an ongoing basis or a one off project. In my eyes,
+               no project is too big or small, and I'm always happy to help you figure out the best solution for you and your business.
+            </p>
+
+
+            <h2>Job Opportunities</h2>
+            <p>Additionally, if you have a role within your company that you think I could work well in, why not send me a message 
+              to discuss it further?</p>
+              <p>With my experience as a Scrum Master, I've learnt how to to approach any challenge. I've implemented new systems that are now used actively 
+                in large companies, greatly improved on digital content and I understand how to tackle difficult conversations within a company.
+              </p>
+          
+            <div class="CardContainer">
+ 
+ 
+        
+              <div class="col-md-12 card1">
+               <div class="dcard">
+               <div class="trigger"></div>
+               <div class="trigger"></div>
+               <div class="trigger"></div>
+               <div class="trigger"></div>
+               <div class="trigger"></div>
+               <div class="trigger"></div>
+               <div class="trigger"></div>
+               <div class="trigger"></div>
+               <div class="trigger"></div>
+               
+           <div class="card">
+             <div class="frame">
+               <div class="hoverh2"> 
+                <h3>Digital Marketing</h3>
+               </div>
+              
+             </div>
+           </div>
+               </div>
+              </div>
+        
+        
+              <div class="col-md-12 card2">
+          
+               <div class="dcard">
+               <div class="trigger"></div>
+               <div class="trigger"></div>
+               <div class="trigger"></div>
+               <div class="trigger"></div>
+               <div class="trigger"></div>
+               <div class="trigger"></div>
+               <div class="trigger"></div>
+               <div class="trigger"></div>
+               <div class="trigger"></div>
+               
+           <div class="card">
+             <div class="frame">
+               <h3 class="hoverh2">Web Design</h3>
+             </div>
+           </div>
+               </div>
+              </div>
+             
+        
+              
+              <div class="col-md-12 card3">
+               <div class="dcard">
+               <div class="trigger"></div>
+               <div class="trigger"></div>
+               <div class="trigger"></div>
+               <div class="trigger"></div>
+               <div class="trigger"></div>
+               <div class="trigger"></div>
+               <div class="trigger"></div>
+               <div class="trigger"></div>
+               <div class="trigger"></div>
+               
+           <div class="card">
+             <div class="frame">
+               <h3 class="hoverh2">Project Management</h3>
+             </div>
+           </div>
+               </div>
+              </div>
+             
+             
+             
+             
+             
+        
+           </div>
+          </section>
+
+          <footer style="position: relative; overflow: hidden; z-index: 0;" id="ContactForm">
+
+            <div  style="position:absolute; top: 30%; right:-40%; z-index: -1;">
+              <svg width="100vw" height="100vh"  viewBox="0 0 750 750">
+        
+                <g transform="rotate(-134.99992 382.63300163 382.63300163)">
+                  <rect class="bottomshadow1" width="404" height="81.601"  opacity="0.5"x="218.967" y="161.008" fill="rgb(0,0,0)"/> 
+                  <rect class="bottomshadow5"  width="619" height="103.856" opacity="0.5"x="73.133" y="252.315" fill="rgb(0,0,0)"/>
+                  <rect class="bottomshadow4"  width="551" height="56.049" opacity="0.5"x="129.133" y="365.886" fill="rgb(0,0,0)"/>
+                  <rect class="bottomshadow3"  width="563" height="99.735" opacity="0.5"x="98.967" y="431.475" fill="rgb(0,0,0)"/>
+                  <rect class="bottomshadow2" width="418" height="83.25" opacity="0.5"x="204.967" y="541.008" fill="rgb(0,0,0)"/>
+        
+                 <rect class="bottomrect1" width="404" height="81.601"  x="218.967" y="151.008" fill="rgb(37,65,178)"/> 
+                 <rect class="bottomrect5"  width="619" height="103.856" x="73.133" y="242.315" fill="rgb(37,65,178)"/>
+                 <rect class="bottomrect4"  width="551" height="56.049" x="129.133" y="355.886" fill="rgb(37,65,178)"/>
+                 <rect class="bottomrect3"  width="563" height="99.735" x="98.967" y="421.475" fill="rgb(37,65,178)"/>
+                 <rect class="bottomrect2" width="418" height="83.25" x="204.967" y="531.008" fill="rgb(37,65,178)"/>
+                 
+         </g>
+                </svg>
+                </div>
+        
+            <h2>Get in touch</h2>
+            <p>
+                Fill in the form below to contact me. I'll get back to you soon.
+              </p>
+            <div class="ContactForm" >
+                <div>
+                  <div>
+        
+                    <div>
+                      <form action="https://api.web3forms.com/submit" method="POST" id="form" >
+                        <input type="hidden" name="access_key" value="81018c34-8ea8-480d-8af1-6dcb526855e6" />
+                        <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                        <input type="checkbox" name="botcheck" id="" style="display: none;" />
+              
+                        <div class="two_fields">
+                          <div class="small_fields left_field">
+
+                            <input type="text" name="name" id="first_name" placeholder="First Name" required />
+                          </div>
+                          <div class="small_fields right_field">
+
+                            <input type="text" name="last_name" id="lname" placeholder="Last Name" required />
+                          </div>
+                        </div>
+
+           
+              
+                        <div class="two_fields">
+                          <div class="small_fields left_field">
+                      
+                            <input type="email" name="email" id="email" placeholder="Email address" required/>
+                          </div>
+              
+                          <div class="small_fields right_field">
+     
+                            <input type="text" name="phone" id="phone" placeholder="Phone number" required />
+                          </div>
+                        </div>
+                        <div class="textfield">
+
+              
+                          <textarea rows="2" name="message" id="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div>
+                          <button type="submit" class="linkhover" >
+                           <p>Send Email</p>
+                          </button>
+                        </div>
+                        <p id="result"></p>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <p>Website created by Josh Taylor.</p>
+            <p>Email me at joshsgt2004@gmail.com for any enquiries.</p>
+            
+        
+            
+          </footer>
+</main>
+</div>
+        
+
+
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" 
+          integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg==" crossorigin="anonymous"></script>
+        
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" 
+          integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw==" crossorigin="anonymous"></script>
+        
+          <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        
+          <script src="https://unpkg.com/@barba/core"></script>
+          <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.7/dist/barba.umd.min.js"></script>
+        <script src="js/app.js"></script>
+          <script src="js/helper.js"></script>
+          <script src="js/main.js"></script>
+        
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+        
+</body>
+</html>
+
