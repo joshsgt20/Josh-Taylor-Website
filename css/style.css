@@ -166,17 +166,17 @@ html {
 }
 
 h1 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
 h2 {
   font-size: 1.3rem;
-  font-weight: 600;
+  font-weight: 550;
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -191,6 +191,7 @@ a {
 
 body {
   font-family: 'Poppins', sans-serif;
+  color: black
  
 }
 
@@ -284,8 +285,9 @@ section, footer{
   list-style: none;
   padding-top: 4rem;
   transition: 1s;
-  opacity: 0.95;
+  opacity: 0.98;
   z-index: 9;
+
 }
 
 
@@ -300,7 +302,7 @@ li {
 
 .MobileMenuLink {
   display: inline;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: white;
   text-decoration: none;
   margin-left: 5vw;
@@ -467,23 +469,20 @@ button[type=submit] {
   border: none;
   border-radius: .5vw;
   transition: 0.3s;
-  background-color: rgb(32, 32, 32);
+  background-color: transparent;
   font-family: "Poppins", sans-serif;
   border: 0.3vh solid rgb(53, 179, 252);
   box-shadow: 0rem 0rem 0.5rem rgb(53, 179, 252); 
   color: white;
   margin-top: 4vh;
-  background-image: linear-gradient(rgb(53, 179, 252), rgb(53, 179, 252));
-  background-repeat: no-repeat;
-  background-size: 0 100%;
-  transition: background-size 1s 0s;
 }
 
 
-button[type=submit]:hover {
+button[type=submit]:hover{
   transition: 0.3s;
   color: white;
   background-color: rgb(53, 179, 252);
+  scale: 1.03;
 }
 
 
@@ -519,25 +518,20 @@ flex-wrap: wrap;
 margin: 4vh 0;
   
 }
-.col-md-12{
-  width: 80vw;
-  height: 24vh;
-  padding: 1vw;
-  margin: 1vh 0vh;
-  }
 
 
-.card {
-width: 100%; 
-display: block; 
-transform-style: preserve-3d; 
+
+.card{
+width: 90%; 
 transition: 0.3s;
-height: 100%;
-box-shadow: 0vw 1vw 1.5vw 1vw #a6a6a6;
+box-shadow: 0vw .5vw 1.2vw .4vw #a6a6a6;
 justify-content: center;
 text-align: center;
-border-radius: 3vw;
+border-radius: 1vw;
 padding: 1vw;
+margin-top: 3vh;
+transform: translateY(50px);
+opacity: 0
 
 }
 
@@ -546,33 +540,9 @@ scale: 1.05;
 }
 
 
-.dcard {
-position: relative; 
-display: block;
-perspective: 3000px; 
-width: 100%;
-height: 100%;
-justify-content: center;
-text-align: center;
-
-}
-
-
-.frame {
-display: block; 
-width: 100%; 
-height: 100%;
-position: absolute;
-  top: 0;
-  left: 0;
-
-}
 
 .card-content {
 color: black; 
-position: absolute;
-top: 50%; left: 50%; 
-transform: translateY(-50%) translateX(-50%) translateZ(100px); 
 text-align: center; 
 z-index: 4;
 width: 95%;
@@ -580,46 +550,9 @@ width: 95%;
 }
 
 .card-content img{
-  width: 35%;
+  width: 25%;
 }
-.trigger {
-position: absolute; 
-height: 33.333333%; width: 50%; 
-display: block; 
-z-index: 2; 
-transform: translateY(-50%) translateX(-50%); 
 
-
-
-
-&:nth-child(1){  left: 0%; top: 0%;
-  &:hover ~ .card {transform: rotateY(8deg) rotateX(-5deg); scale:1.03;}
- }
-&:nth-child(2){  left: 50.333333%; top: 0%;
-  &:hover ~ .card {transform: rotateY(0deg) rotateX(-5deg);scale:1.03;}
- }
-&:nth-child(3){  left: 99.666666%; top: 0%;
-  &:hover ~ .card {transform: rotateY(-8deg) rotateX(-5deg);scale:1.03;}
- }
-&:nth-child(4){  left: 0%; top: 33.333333%;
-  &:hover ~ .card {transform: rotateY(8deg);scale:1.03;}
- }
-&:nth-child(5){  left: 50.333333%; top: 33.333333%;
-  &:hover ~ .card {transform: rotateY(0deg) rotateX(0deg);scale:1.03;}
- }
-&:nth-child(6){  left: 99.666666%; top: 33.333333%;
-  &:hover ~ .card {transform: rotateY(-8deg) rotateX(0deg);scale:1.03;}
- }
-&:nth-child(7){  left: 0%; top: 66.666666%;
-  &:hover ~ .card {transform: rotateY(8deg) rotateX(5deg);scale:1.03;}
- }
-&:nth-child(8){  left: 50.333333%; top: 66.666666%;
-  &:hover ~ .card {transform: rotateY(0deg) rotateX(5deg);scale:1.03;}
- }
-&:nth-child(9){  left: 99.666666%; top: 66.666666%;
-  &:hover ~ .card {transform: rotateY(-8deg) rotateX(5deg);scale:1.03;}
- }
-}
 
 /* Home Page CSS */
 
@@ -689,11 +622,11 @@ transform: scale(1.1);
 
 .MobileMenu .fa{
   margin-left: 5vw;
-  font-size: 3rem;
+  font-size: 2rem;
   box-shadow: 0rem 0rem 0.5rem rgb(53, 179, 252); 
     text-align: center;
     justify-content: center;
-    width: 15vw;
+    width: 13vw;
 }
 
 
@@ -720,6 +653,7 @@ transform: scale(1.1);
 .GridContainer img{
   width: 90%;
   margin: 2vh auto;
+  margin-bottom: 4vh;
 
 }
 
@@ -727,12 +661,58 @@ transform: scale(1.1);
 margin: 2vh 0;;
 }
 
-.row{
-  display: flex;
-  flex-direction: column;
+.DarkBtn {
+  color: white;
+  padding: .5vh 2vw;
+  border: none;
+  border-radius: .5vw;
+  transition: 0.3s;
+  background-color: transparent;
+  font-family: "Poppins", sans-serif;
+  border: 0.3vh solid rgb(53, 179, 252);
+  box-shadow: 0rem 0rem 0.5rem rgb(53, 179, 252); 
+  color: white;
+  margin: 2vh 0vw;
+
+}
+
+.DarkBtn:hover{
+  transition: 0.3s;
+  color: white;
+  background-color: rgb(53, 179, 252);
+  scale: 1.03;
+}
+
+.LightBtn {
+  color: white;
+  padding: .5vh 2vw;
+  border: none;
+  border-radius: .5vw;
+  transition: 0.3s;
+  background-color: rgb(32, 32, 32);
+  font-family: "Poppins", sans-serif;
+  border: 0.3vh solid rgb(32, 32, 32);
+  box-shadow: 0rem 0rem 0.5rem rgb(32, 32, 32); 
+  color: white;
+  margin: 2vh 0vw;
+
+}
+
+.LightBtn:hover{
+  transition: 0.3s;
+  color: white;
+  background-color: rgb(53, 179, 252);
+  scale: 1.03;
 }
 
 
+
+
+.AboutImg{
+  width: 80%;
+  margin: 2vh 10%;
+  -webkit-filter: grayscale(100%);filter: grayscale(100%);
+}
 /*Contact page CSS */
 
 .Contact-Container {
@@ -780,16 +760,16 @@ margin: 2vh 0;;
 }
 
 .TextContainer h1{
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .TextContainer h2{
-  font-size: 2rem;
+  font-size: 1.4rem;
   
 }
 
 .TextContainer h3{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .Contact-Text a{
@@ -849,55 +829,24 @@ transition: .3s;
 
 
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 750px) {
 
-  body{
-    cursor: none;
-  }
-  .cursor {
-    display: block;
-  }
-  
-  form,label,input[type=text],input[type=email], textarea {
-    cursor: none;
-  }
-  
-  button[type=submit] {
-    cursor: none;
-  }
-  
-  button[type=submit]:hover {
-cursor: none;
-  }
-
-   .nav-links li:hover, .nav-links, .nav-links a, nav, .nav-links a:hover, .SocialMedia .fa:hover{
-    cursor: none;
-   }
-
-   .SocialMedia {
-    margin: 0;
-  }
-
-  .linkhover:hover{
-    cursor: none;
-  }
+ 
   
 .SocialMedia .fa{
-  font-size: 2.4rem;
-  width: 7vw;
+  font-size: 2.3rem;
+  width: 8vw;
   padding: 1vw;
 }
-  .link-grow {
-    display: block;
-  }
+
 
   .RectangleContainer{
-    top: -40%; 
+    top: -35%; 
     right:-45%; 
   }
 
   .FooterRectangleContainer{
-    top: -15%; 
+    top: 0%; 
     right:-35%; 
   }
 
@@ -929,7 +878,7 @@ cursor: none;
   }
 
   .nav-links li {
-    padding: 0vh 3vw;
+    padding: 0vh 2.5vw;
     font-size: .9rem;
   }
   .nav-links a {
@@ -968,20 +917,20 @@ cursor: none;
   }
 
   h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 
   }
 
   h2 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
   h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   
   p, li, input, textarea {
-    font-size: 1rem;
+    font-size: .95em;
     padding-bottom: 2%;
   }
 
@@ -1042,15 +991,12 @@ cursor: none;
   margin: 4vh 0;
   
 }
-.col-md-12{
-  width: 24vw;
-  height: 17vh;
-  padding: 0vw;
-  margin: 0vh 0vh;
-  }
+
 
   .card {
     border-radius: 1vw;
+    width: 30%;
+    margin-top: 0;
     }
 
     .card-content img{
@@ -1059,6 +1005,7 @@ cursor: none;
 
     .GridContainer{
       display: grid;
+      align-items: center;
       grid-template-columns: 1fr 1fr;
       grid-template-areas: 
       "Text1 Image1"
@@ -1069,14 +1016,23 @@ cursor: none;
      
      
      .GridText{
-      padding: 2vw;
+      margin: 3vh auto;
      }
      
      .GridContainer img{
        width: 90%;
-       margin: 2vh auto;
+       margin: 3vh auto;
      }
-     
+    .AboutMe{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .AboutImg{
+      width: 40%;
+      margin: 0;
+      margin-left: 4vw;
+    }
 
      .Contact-Container{
       display: flex;
@@ -1120,27 +1076,61 @@ cursor: none;
 /* Laptop Screen size */
 @media screen and (min-width: 1000px) {
  
+  .link-grow {
+    display: block;
+  }
+  body{
+    cursor: none;
+  }
+  .cursor {
+    display: block;
+  }
+  
+  form,label,input[type=text],input[type=email], textarea {
+    cursor: none;
+  }
+  
+  button[type=submit] {
+    cursor: none;
+  }
+  
+  button[type=submit]:hover {
+cursor: none;
+  }
+
+   .nav-links li:hover, .nav-links, .nav-links a, nav, .nav-links a:hover, .SocialMedia .fa:hover{
+    cursor: none;
+   }
+
+   .SocialMedia {
+    margin: 0;
+  }
+
+  .linkhover:hover{
+    cursor: none;
+  }
+
   #Title {
     font-size: 2.3rem;
     margin: 1vh 0vw;
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
 
   }
 
   h2 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 
   }
   
   h3 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   p, li, input, textarea {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
 
@@ -1181,13 +1171,17 @@ cursor: none;
     padding: 0vh 7vw;
   }
 
+  .nav-links li {
+    font-size: 1rem;
+  }
+
   .Intro_Text p{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .Welcome {
-    font-size: 2.6rem;
-    padding: 5vh 0vw;
+    font-size: 2rem;
+    padding: 3vh 0vw;
   }
 
 
@@ -1197,19 +1191,31 @@ cursor: none;
     padding: 1.3vw;
     
   }
+
+  .GridContainer{
+    grid-template-columns: 1fr .2fr 1fr;
+    grid-template-areas: 
+    "Text1 . Image1"
+    "Image2 . Text2"
+    "Text3 . Image3"
+    "Image4 . Text4";
+   }
  
   .CardContainer{
-    display: flex;
-    justify-content: space-between;
     margin: 5vh 0;;
     
   }
-  .col-md-12{
-    width: 23vw;
-    height: 20vh;
-    padding: 0vw;
-    margin: 0vh 0vh;
-    }
+
+  .AboutImg{
+    width: 30%;
+    margin-left: 2vw;
+  }
+  .Card{
+    width: 28%;
+  }
+  .card-content img{
+    width: 50%;
+  }
 
       .Contact-Text{
         z-index: 2;
@@ -1218,11 +1224,11 @@ cursor: none;
       }
       
       .TextContainer h1{
-        font-size: 2.6rem;
+        font-size: 2.2rem;
       }
       
       .TextContainer h2{
-        font-size: 2.4rem;
+        font-size: 2.1rem;
       }
       
       .TextContainer h3{
@@ -1249,7 +1255,25 @@ cursor: none;
 
 @media screen and (min-width: 1200px) {
   #Title {
-    font-size: 2.7rem;
+    font-size: 2.4rem;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+
+  }
+
+  h2 {
+    font-size: 1.5rem;
+
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  p, li, input, textarea {
+    font-size: 1.1rem;
   }
 
   .RectangleContainer{
@@ -1264,15 +1288,15 @@ cursor: none;
   }
 
   .Welcome {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     padding: 1.5vh 0vw;
   }
 
-  .Intro_Text{
-    font-size: 1.9rem;
+  .Intro_Text p{
+    font-size: 1.3rem;
   }
   .nav-links li {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .two_fields{
@@ -1282,7 +1306,7 @@ cursor: none;
 }
 
 .TextContainer h1{
-  font-size: 2.5rem;
+  font-size: 2.3rem;
 }
 
 .TextContainer h2{
@@ -1293,6 +1317,10 @@ cursor: none;
   font-size: 2rem;
 }
 
+.AboutImg{
+  width: 27%;
+  margin-left: 2vw;
+}
 
 .Contact-Text{
   margin: 2vh 0vw;;
@@ -1300,16 +1328,15 @@ cursor: none;
 }
 
 .SocialMedia .fa {
-  width: 7vw;
+  width: 6vw;
   margin: 0vh 1vw;
 }
 
-.col-md-12{
-  width: 22vw;
-  height: 22vh;
-  }
+.Card{
+  width: 26%;
+}
 .card-content img{
-  width: 50%;
+  width: 40%;
 }
 .ContactSocials .fa{
   font-size:2rem;
@@ -1361,70 +1388,60 @@ cursor: none;
     padding: 0vh 10vw;
   }
   .Welcome {
-    font-size:3.5rem;
+    font-size:2.7rem;
     padding: 1.5vh 0vw;
   }
 
   .Intro_Text p{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
 
   .nav-links li {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   #Title {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
   }
 
   h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
 
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
 
   }
   h3 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   p, input, textarea {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .FooterDiv a{
     font-size: 1.3rem;
   }
 
+  .AboutImg{
+    width: 24%;
+    margin-left: 2vw;
+  }
   .CardContainer{
-    display: flex;
-    height: auto;
-  flex-wrap: wrap;
   margin: 7vh 0;
     
   }
-  .col-md-12{
-    width: 20vw;
-    height: 30vh;
-    margin: 0vh 0vh;
-    }
-    .card-content img{
-      width: 50%;
-    }
-    .card {
-      transition: 0.3s;
-      height: 100%;
-      box-shadow: 0vw 1vw 1.5vw .5vw #a6a6a6;
-      justify-content: center;
-      text-align: center;
-      border-radius: 1vw;
-      
-      }
+
+  .Card{
+    width: 25%;
+  }
+  .card-content img{
+    width: 35%;
+  }
 
       .GridContainer{
-        display: grid;
         grid-template-columns: 1fr .5fr 1fr;
         grid-template-areas: 
         "Text1 . Image1"
@@ -1434,27 +1451,28 @@ cursor: none;
        }
 
        .GridText{
-        padding: 1vw;
+        margin: 4vh auto;
        }
        
        .GridContainer img{
          width: 90%;
          margin: auto;
+         margin: 0vh auto;
        }
 
 .Contact-Container{
   margin-top: 5vh;
 }
        .TextContainer h1{
-        font-size: 3.5rem;
+        font-size: 2.8rem;
       }
       
       .TextContainer h2{
-        font-size: 3rem;
+        font-size: 2.7rem;
       }
       
       .TextContainer h3{
-        font-size: 2.8rem;
+        font-size: 2.6rem;
       }
        .ContactImage {
         width: 35%;
@@ -1482,3 +1500,23 @@ cursor: none;
         font-size:2.2rem;
       }
 }
+/*
+
+// X-Small devices (portrait phones, less than 576px)
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... }
+
+ */

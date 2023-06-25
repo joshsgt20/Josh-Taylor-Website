@@ -162,24 +162,96 @@ function contentAnimation(container) {
 
 
     // Scroll Animations
-    .to(".hello",{
+
+    .to(".card",{
       scrollTrigger: {
-        trigger: ".hello",
+        trigger: ".CardContainer",
         start: "top 90%",
         end: "top 50%",
         scrub: 1,
-        toggleActions: "play none none none"
+        toggleActions: "play none none none",
+        duration: 0.5,
       },
-      xPercent:100,
-      rotation: 360,
+      y:0,
+      stagger: 0.3,
+      opacity:1,
+      ease: 'power1.out'
     })
 
-
-    .from(".col-md-12",{
+    .from(".AboutImg",{
       scrollTrigger: {
-        trigger: ".card1",
-        start: "top 90%",
+        trigger: ".AboutImg",
+        start: "top 80%",
+        end: "top 40%",
+        scrub: 1,
+        toggleActions: "play none none none"
+      },
+      y:50,
+      opacity: 0,
+      ease: 'power4.out'
+    })
+    
+    .from(".ContactImg",{
+      scrollTrigger: {
+        trigger: ".ContactInfo",
+        start: "top 80%",
         end: "top 50%",
+        scrub: 3,
+        toggleActions: "play none none none",
+      },
+      y:50,
+      opacity: 0,
+      stagger: 0.3,
+      ease: 'power4.out'
+    })
+
+    .from(".GridImage1",{
+      scrollTrigger: {
+        trigger: ".DarkBtn",
+        start: "top 80%",
+        end: "top 40%",
+        scrub: 3,
+        toggleActions: "play none none none",
+      },
+      y:50,
+      opacity: 0,
+      stagger: 0.3,
+      ease: 'power4.out'
+    })
+
+    .from(".GridImage2",{
+      scrollTrigger: {
+        trigger: ".GridImage1",
+        start: "top 80%",
+        end: "top 40%",
+        scrub: 3,
+        toggleActions: "play none none none",
+      },
+      y:50,
+      opacity: 0,
+      stagger: 0.3,
+      ease: 'power4.out'
+    })
+
+    .from(".GridImage3",{
+      scrollTrigger: {
+        trigger: ".GridImage2",
+        start: "top 80%",
+        end: "top 40%",
+        scrub: 3,
+        toggleActions: "play none none none",
+      },
+      y:50,
+      opacity: 0,
+      stagger: 0.3,
+      ease: 'power4.out'
+    })
+
+    .from(".GridImage4",{
+      scrollTrigger: {
+        trigger: ".GridImage3",
+        start: "top 80%",
+        end: "top 40%",
         scrub: 3,
         toggleActions: "play none none none",
       },
@@ -213,8 +285,6 @@ function contentAnimation(container) {
       ease: 'power1.out'
     })
 
-
-
     .from(".footer-icon",{
       scrollTrigger: {
         trigger: "#Footer",
@@ -228,7 +298,6 @@ function contentAnimation(container) {
       stagger: 0.3,
       ease: 'power1.out'
     })
-
 
 
     .call(scrollAnimation, [container], 'start')

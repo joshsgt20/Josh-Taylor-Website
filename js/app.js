@@ -44,7 +44,7 @@ let navLinks = document.querySelectorAll('.linkhover');
 window.addEventListener('mousemove',cursor)
 
 function cursor(e){
-  if ($(window).width() > 650) {
+  if ($(window).width() > 950) {
     mouseCursor.style.top = e.pageY + 'px';
     mouseCursor.style.left = e.pageX + 'px';
 }}
