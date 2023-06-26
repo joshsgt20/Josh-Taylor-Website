@@ -176,7 +176,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 500;
 }
 
@@ -185,6 +185,9 @@ p, li, input, textarea {
   font-family: 'Lato', sans-serif
 }
 
+p{
+  margin: 1vh 0vw;
+}
 a {
   text-decoration: none;
 }
@@ -467,7 +470,7 @@ button[type=submit] {
   padding: 1vh 3vw;
   width: 35%;
   border: none;
-  border-radius: .5vw;
+  border-radius: .3vw;
   transition: 0.3s;
   background-color: transparent;
   font-family: "Poppins", sans-serif;
@@ -527,12 +530,12 @@ transition: 0.3s;
 box-shadow: 0vw .5vw 1.2vw .4vw #a6a6a6;
 justify-content: center;
 text-align: center;
-border-radius: 1vw;
+border-radius: .5vw;
 padding: 1vw;
 margin-top: 3vh;
 transform: translateY(50px);
-opacity: 0
-
+opacity: 0;
+color: black; 
 }
 
 .card:hover{
@@ -540,16 +543,7 @@ scale: 1.05;
 }
 
 
-
-.card-content {
-color: black; 
-text-align: center; 
-z-index: 4;
-width: 95%;
-
-}
-
-.card-content img{
+.card img{
   width: 25%;
 }
 
@@ -665,7 +659,7 @@ margin: 2vh 0;;
   color: white;
   padding: .5vh 2vw;
   border: none;
-  border-radius: .5vw;
+  border-radius: .3vw;
   transition: 0.3s;
   background-color: transparent;
   font-family: "Poppins", sans-serif;
@@ -687,7 +681,7 @@ margin: 2vh 0;;
   color: white;
   padding: .5vh 2vw;
   border: none;
-  border-radius: .5vw;
+  border-radius: .3vw;
   transition: 0.3s;
   background-color: rgb(32, 32, 32);
   font-family: "Poppins", sans-serif;
@@ -713,6 +707,21 @@ margin: 2vh 0;;
   margin: 2vh 10%;
   -webkit-filter: grayscale(100%);filter: grayscale(100%);
 }
+
+
+
+.ScrumImage1{
+  width: 20%;
+  margin-left: 30%;
+}
+.ScrumImage2{
+  width: 20%;
+}
+
+.ScrumImage1 img, .ScrumImage2 img{
+  width: 20%;
+}
+
 /*Contact page CSS */
 
 .Contact-Container {
@@ -933,6 +942,9 @@ transition: .3s;
     font-size: .95em;
     padding-bottom: 2%;
   }
+  p{
+    margin: .5vh 0vw;
+  }
 
   .FooterSocials .fa{
     font-size: 1.8rem;
@@ -946,7 +958,7 @@ transition: .3s;
   input[type=text],input[type=email], textarea {
     width: 100%;
     padding: .5vh 0vw;
-    border-radius: .5vw;
+    border-radius: .3vw;
     box-sizing: border-box;
     margin: 1vh 0vw;
     resize: vertical;
@@ -958,7 +970,7 @@ transition: .3s;
     color: white;
     padding: 1vh 0vw;
     width: 40%;
-    border-radius: .5vw;
+    border-radius: .3vw;
     transition: 0.3s;
   }
   
@@ -994,46 +1006,54 @@ transition: .3s;
 
 
   .card {
-    border-radius: 1vw;
+    border-radius: 0.5vw;
     width: 30%;
     margin-top: 0;
     }
 
-    .card-content img{
+    .card img{
       width: 60%;
     }
 
     .GridContainer{
       display: grid;
       align-items: center;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr .1fr 1fr;
       grid-template-areas: 
-      "Text1 Image1"
-      "Image2 Text2"
-      "Text3 Image3"
-      "Image4 Text4";
+      "Text1 . Image1"
+      "Image2 . Text2"
+      "Text3 . Image3"
+      "Image4 . Text4";
      }
      
      
      .GridText{
-      margin: 3vh auto;
+      margin: 4vh auto;
      }
      
      .GridContainer img{
        width: 90%;
        margin: 3vh auto;
      }
-    .AboutMe{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+
     .AboutImg{
       width: 40%;
-      margin: 0;
-      margin-left: 4vw;
+      float: right;
+      margin-right: 0;
     }
-
+    
+    .ScrumImage1{
+      width: 15%;
+      margin-left: 0%;
+    }
+    .ScrumImage2{
+      width: 15%;
+      margin-left: 5%;
+    }
+    
+    .ScrumImage1 img, .ScrumImage2 img{
+      width: 15%;
+    }
      .Contact-Container{
       display: flex;
       justify-content: space-between;
@@ -1133,6 +1153,9 @@ cursor: none;
     font-size: 1rem;
   }
 
+  p{
+    margin: .8vh 0vw;
+  }
 
 
 .FooterDiv a{
@@ -1193,7 +1216,7 @@ cursor: none;
   }
 
   .GridContainer{
-    grid-template-columns: 1fr .2fr 1fr;
+    grid-template-columns: 1fr .15fr 1fr;
     grid-template-areas: 
     "Text1 . Image1"
     "Image2 . Text2"
@@ -1201,19 +1224,37 @@ cursor: none;
     "Image4 . Text4";
    }
  
+   .GridContainer img{
+    width: 90%;
+    margin: 4vh auto;
+  }
   .CardContainer{
     margin: 5vh 0;;
     
   }
 
   .AboutImg{
-    width: 30%;
-    margin-left: 2vw;
+    width: 35%;
+    margin-right: 0;
   }
+
+  .ScrumImage1{
+    width: 12%;
+    margin-left: 0%;
+  }
+  .ScrumImage2{
+    width: 12%;
+    margin-left: 5%;
+  }
+  
+  .ScrumImage1 img, .ScrumImage2 img{
+    width: 12%;
+  }
+
   .Card{
     width: 28%;
   }
-  .card-content img{
+  .card img{
     width: 50%;
   }
 
@@ -1318,9 +1359,10 @@ cursor: none;
 }
 
 .AboutImg{
-  width: 27%;
-  margin-left: 2vw;
+  width: 30%;
+  margin-right: 0;
 }
+
 
 .Contact-Text{
   margin: 2vh 0vw;;
@@ -1335,7 +1377,7 @@ cursor: none;
 .Card{
   width: 26%;
 }
-.card-content img{
+.card img{
   width: 40%;
 }
 .ContactSocials .fa{
@@ -1344,7 +1386,7 @@ cursor: none;
 }
 
 /* Desktop Screen size */
-@media screen and (min-width: 1650px) {
+@media screen and (min-width: 1400px) {
   section{
     padding: 8vh 15vw;
   }
@@ -1417,6 +1459,9 @@ cursor: none;
     font-size: 1.5rem;
   }
 
+  p{
+    margin: 0vh 0vw;
+  }
   p, input, textarea {
     font-size: 1.2rem;
   }
@@ -1426,8 +1471,21 @@ cursor: none;
   }
 
   .AboutImg{
-    width: 24%;
-    margin-left: 2vw;
+    width: 35%;
+    margin-right: 0;
+  }
+
+  .ScrumImage1{
+    width: 8%;
+    margin-left: 0%;
+  }
+  .ScrumImage2{
+    width: 8%;
+    margin-left: 2%;
+  }
+  
+  .ScrumImage1 img, .ScrumImage2 img{
+    width: 8%;
   }
   .CardContainer{
   margin: 7vh 0;
@@ -1437,12 +1495,12 @@ cursor: none;
   .Card{
     width: 25%;
   }
-  .card-content img{
+  .card img{
     width: 35%;
   }
 
       .GridContainer{
-        grid-template-columns: 1fr .5fr 1fr;
+        grid-template-columns: 1fr .3fr 1fr;
         grid-template-areas: 
         "Text1 . Image1"
         "Image2 . Text2"
@@ -1451,13 +1509,13 @@ cursor: none;
        }
 
        .GridText{
-        margin: 4vh auto;
+        margin: 8vh auto;
        }
        
        .GridContainer img{
-         width: 90%;
+         width: 80%;
          margin: auto;
-         margin: 0vh auto;
+         margin: 4vh auto;
        }
 
 .Contact-Container{

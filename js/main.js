@@ -208,7 +208,7 @@ function contentAnimation(container) {
     .from(".GridImage1",{
       scrollTrigger: {
         trigger: ".DarkBtn",
-        start: "top 80%",
+        start: "top 65%",
         end: "top 40%",
         scrub: 3,
         toggleActions: "play none none none",
@@ -222,8 +222,8 @@ function contentAnimation(container) {
     .from(".GridImage2",{
       scrollTrigger: {
         trigger: ".GridImage1",
-        start: "top 80%",
-        end: "top 40%",
+        start: "top 55%",
+        end: "top 30%",
         scrub: 3,
         toggleActions: "play none none none",
       },
@@ -236,8 +236,8 @@ function contentAnimation(container) {
     .from(".GridImage3",{
       scrollTrigger: {
         trigger: ".GridImage2",
-        start: "top 80%",
-        end: "top 40%",
+        start: "top 55%",
+        end: "top 30%",
         scrub: 3,
         toggleActions: "play none none none",
       },
@@ -250,8 +250,8 @@ function contentAnimation(container) {
     .from(".GridImage4",{
       scrollTrigger: {
         trigger: ".GridImage3",
-        start: "top 80%",
-        end: "top 40%",
+        start: "top 55%",
+        end: "top 30%",
         scrub: 3,
         toggleActions: "play none none none",
       },
