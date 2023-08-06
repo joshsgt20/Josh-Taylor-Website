@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josh Taylor - Portfolio Home</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+
+  <div class="transition-container">
+    <div class="transition-slide"></div>
+    <div class="transition-slide2"></div>
+    <div class="transition-slide3"></div>
+    <div class="transition-slide4"></div>
+    <div class="transition-slide5"></div>
+  </div>
+<div class="cursor"></div>
+<header>
+  <nav>
+    <h1 id="Title"><span>JT</span> Digital <span>&lt;/&gt;</span> </h1>
+    <ul class="nav-links linkhover" id="Menu">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Experience.html">Experience</a></li>
+        <li><a href="Contact.html">Contact</a></li>  
+    </ul>
+    <div class="Hamburger" id="Hamburger_Icon" onclick="AnimateMenu(this)">
+        <span class="menuIcon material-icons">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+        </span>
+    
+    </div>
+
+    <ul class="MobileMenu">
+      <li><a class="MobileMenuLink linkhover" href="index.html" onclick="toggleanimation()">Home</a></li>
+      <li><a class="MobileMenuLink linkhover" href="Services.html" onclick="toggleanimation()">Services</a></li>
+      <li><a class="MobileMenuLink linkhover" href="Experience.html" onclick="toggleanimation()">Experience</a></li>
+      <li><a class="MobileMenuLink linkhover" href="Contact.html" onclick="toggleanimation()">Contact</a></li>
+      <br>
+      <li><a href="https://twitter.com/JT_WebDesigns" aria-label="Twitter" target="_blank" class="fa fa-twitter linkhover"></a></li><br>
+      <li><a href="https://www.linkedin.com/in/joshsgt20/" target="_blank" class="fa fa-linkedin linkhover"></a></li><br>
+      <li><a href="https://www.instagram.com/jt_webdesigns/" target="_blank" class="fa fa-instagram linkhover"></a></li>
+  </ul>
+
+</nav>
+
+  
+
+    </header>
+
+    <!-- Better to wrap barba container as close as possible -->
+    <div data-barba="wrapper" style="overflow: hidden;" >
+      <!-- Only this section changes on link navigation -->
+      <main data-barba="container" data-barba-namespace="Work">
+
+<section class="TopSection dark-background Services-Section">
+
+  <h1 class="Welcome" style="color: rgb(53, 179, 252)">My services to improve your business</h1>
+        <div class="ImageSlider">
+
+
+          
+  <div class="slideshowcontainer">
+    <input type="radio" name="slider" id="item-1" checked>
+    <input type="radio" name="slider" id="item-2">
+    <input type="radio" name="slider" id="item-3">
+  <div class="imagecardcontainer">
+    <label class="imagecards" for="item-1" id="slide-1">
+      
+      <img onclick='document.getElementById("AdditionalInfo").innerHTML = "Web Design Text"' class="slideimages"src="Images\Collages\Web Design Collage.png" alt="song">
+<h2>Web Design</h2>
+    </label>
+    <label class="imagecards" for="item-2" id="slide-2">
+      <img onclick='document.getElementById("AdditionalInfo").innerHTML = "Marketing"' class="slideimages" src="Images\Collages\Marketing Collage.png"  alt="song">
+      <h2>Marketing</h2>
+    </label>
+    <label class="imagecards" for="item-3" id="slide-3">
+      <img onclick='document.getElementById("AdditionalInfo").innerHTML = "Digital Design"' class="slideimages"src="Images\Collages\Digital Design Collage.png" alt="song">
+      <h2>Digital Design</h2>
+    </label>
+  </div>
+
+
+  <p id="AdditionalInfo" style="margin-top: 4vh;opacity: 0; transform: translateY(50px);">Web Design Text</p>
+
+
+  </div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+<section>
+  <p>
+    Top has an overview of my services - Web design, marketing, design <br>
+    carousel at the top? <br>
+    Below go into detail of everything <br>
+    Below have brief explanations of what everything does, and the options I'd offer <br>
+    Links to the examples of projects - which can be featured on the main page 
+    <br>
+  </p>
+  <ul>
+    <li>Websites - UI Design, SEO, CMS </li>
+    <li>Emails</li>
+    <li>Social Media - graphics, posting </li>
+    <li>Graphics</li>
+  </ul>
+  <h2>Scrum Master</h2>
+  <p>Stakeholder management, project management, communication, etc.</p>
+
+
+</section>
+
+
+
+<section class="SocialMediaWork dark-background">
+  <h2 style="color:rgb(53, 179, 252)">Social Media Marketing</h2>
+  <p>At University, I specialised in <strong>social media marketing / campaigning </strong>- learning the theory behind social media and its massive influence in todays society,
+    whilst also being able to gain experience by completing multiple online campaigns different organisations, to either help raise awareness or to promote events.</p>
+    <p>These campaigns have always been completed independently and involve a high amount of planning to be complete. On reflection, these can be narrowed down into four main stages
+      <ol>
+        <li><p><strong>Planning</strong> - Finding what will work best, the type of content that I will post and it's schedule.</p></li>
+        <li><p><strong>Designing</strong> - Design various types of content that relates to the goal of the campaign using Adobe Creative Cloud.</p></li>
+        <li><p><strong>Campaigning</strong> - The actual campaigning process, ensuring that all posts are released on time and that I am interacting with the audience.</p></li>
+        <li><p><strong>Reflection</strong> - Here I reflect on the outcomes, analyse the statistics and give feedback to the organisation in order to improve going forward.</p></li>
+      </l>
+    </p>
+
+<h3 style="color:rgb(53, 179, 252)" id="AwarenessMedia">Awareness Campaign</h3>
+<p>Alongside the two websites for <strong>University Mental Health</strong> and <strong>Children's Mental Health</strong>, I performed two social media campaigns to help promote the websites 
+and raise awareness.</p>
+<p>Both campaigns were posted on Adhar Project's social media profiles, as I wanted to make a lasting impact on a charity organisation and give the audiece somewhere to find support. </p>
+<p>For each campaign I created mutliple graphics on Illustrator to post so that I could cover a large amount of content, and ensured to use every feature of the social media sites that were used.</p>    
+
+<div class="SocialMediaImages">
+
+<img src="Images\My Designs\Advice 3.png" alt="">
+<img src="Images\My Designs\University MH Content-12.png" alt="">
+<img src="Images\My Designs\University MH Content-16.png" alt="">
+<img src="Images\My Designs\Express Yourself 2.png" alt="">
+</div>
+  <h3 style="color:rgb(53, 179, 252)">Other Projects</h3>
+  <p>I have also completed other social media work for both university projects and freelance projects.</p>
+  <p>At Uni, I completed a campaign for the DMU Theatre Society, where I took control of their social media accounts to promote their upcoming events.</p>
+  <p>For freelance; I've created multiple graphics and posters, to both raise awareness and promote upcoming events, for Adhar Project and South Asian Health Action - both leicester based charities.</p>
+
+
+
+  
+      </section>
+
+
+      
+
+    <section class="Websites">
+
+
+      <div style="grid-area: WebsiteText; margin: 0">
+        <h2>Web Design & UI/UX Design</h2>
+        <p>These show some of the websites that I have created for both university and for different organisations as freelance projects.</p>
+        <p>All of these sites <strong>(including this portfolio site)</strong> have been coded using HTML, CSS and JavaScript to be fully functional on any device, with the aim of 
+          achieving a good design and an easy UI.
+        </p>
+</div>
+
+
+<div class="WebsiteDescription" id="EcommerceWebsite" style="grid-area: EcommerceText">
+  <h3>Ecommerce Store</h3>
+<p>This is one of my most recent, personal projects, that was created in order to learn, and demonstate, how to build a functional, secure,
+   ecommerce store.
+
+</p>
+
+<p>The site uses SnipCart, an online store API that ensures all orders are encrypted and validated, removing the risk of fraudulent activity. The site is 
+  also created to be both responsive, and functional, so that users are able to easily find their desired product.
+</p>
+
+<p>This site is made to be an example, so additional features and functionality could be added upon request.</p>
+<a href="Eccomerce/index.html" target="_blank">
+<button class="LightBtn linkhover"><h3 style="padding: 0;">Ecommerce Store Website</h3></button></a>
+
+</div>
+
+<div class="Flipcard" id="UniSite" style="grid-area: EcommerceImage">
+<div class="Inner-Flipcard">
+<div class="Frontcover">
+<img src="Images\Mockups\Eccomere Mobile Mockup.png" class="Mobile" alt="">
+<img src="Images\Mockups\Eccomerce Mockup.png" alt="">
+</div>
+<div class="Backcover">
+<img src="Images\Mockups\Eccomere Mobile Mockup.png" class="Mobile" alt="">
+</div>
+</div>
+</div>
+
+<div class="WebstiteDescription"id="MoodsWebsite" style="grid-area: MoodsText">
+        <h3>Moods. Site</h3>
+        <p>This site was created after the orignal design of its prototype.</p>
+        <p>It is designed as a progressive web application, so features a slightly different UI design to my other sites, as well as featuring multiple, 
+          built-in applications, such as a <strong>to-do list</strong> which uses <strong>local storage</strong>, a <strong>weather app</strong> which uses <strong>API</strong> and more.
+        </p>
+        <a href="Moods Site\index.html" target="_blank">
+          <button class="LightBtn linkhover"><h3 style="padding: 0">Moods Website</h3></button></a>
+        <a href="https://projects.invisionapp.com/prototype/Moods-Final-Josh-Taylor-ckja8fedg00adtk01wfk8kmhx/play/e0e468ab" target="_blank">
+          <button class="LightBtn linkhover"><h3 style="padding: 0;">Moods UI Design</h3></button> </a>
+</div>
+
+
+<div class="Flipcard" style="grid-area: MoodsSite" id="MoodsSite">
+  <div class="Inner-Flipcard">
+    <div class="Frontcover">
+  <img src="Images\Mockups\Moods Mobile Mockup.png" class="Mobile" alt="">
+      <img src="Images\Mockups\Moods Mockup (2).png" alt="">
+    </div>
+    <div class="Backcover">
+      <img src="Images\Mockups\Moods Mobile Mockup.png" class="Mobile" alt="">
+      
+    </div>
+  </div>
+</div>
+
+<div class="WebsiteDescription" id="AwarenessWebsites" style="grid-area: AwarenessText">
+        <h3>Awareness Sites</h3>
+        <p>These two sites were created as part of my Technology Project (otherwide known as a dissertation) at DMU.</p>
+        <p>Overall these sites are relatively basic, using a less JavaScript, but plenty of HTML and CSS to ensure they're fully adaptive to screen size. These sites were combined with <strong>social media campaign</strong>
+          to help raise awareness of <strong>Children's Mental Health</strong> and <strong>University Student Mental Health</strong>.
+        </p>
+        <p>This project was successful in raising awareness and allowed me to focus on ensuring the site was fully functional over creating something with lots of built-in features.
+        </p>
+        <a href="Children Campaign Website\index.html" target="_blank">
+<button class="LightBtn linkhover"><h3 style="padding: 0;">Children's Mental Health Site Website</h3></button></a>
+<a href="Uni Campaign Website\index.html" target="_blank">
+<button class="LightBtn linkhover"><h3 style="padding: 0;">University Mental Health Website</h3></button></a>
+
+</div>
+
+<div class="Flipcard" id="UniSite" style="grid-area: UniSite">
+  <div class="Inner-Flipcard">
+    <div class="Frontcover">
+  <img src="Images\Mockups\Mental Health Site Mobile Mockup.png" class="Mobile" alt="">
+      <img src="Images\Mockups\Mental Health Site Mockup.png" alt="">
+    </div>
+    <div class="Backcover">
+      <img src="Images\Mockups\Mental Health Site Mobile Mockup.png" class="Mobile" alt="">
+    </div>
+  </div>
+</div>
+
+
+<div class="WebstiteDescription" id="AdharWebsite" style="grid-area: AdharText">
+        <h3>Adhar Project</h3>
+        <p>This site was my first ever freelance project, where I was tasked with re-creating Adhar Project's website.</p>
+        <p>Adhar's previous website was extremely outdated and created using an old web-design platform, so I completely coded the site 
+          from scratch and followed their desired design.
+        </p>
+        <p>The charity didn't want any fancy features or a particularly bold design, they just wanted an simple, informational site that was good 
+          for their audience.
+        </p>
+        <p>Regardless, this project helped me learn new skills and ways to learn independently, and I have since been able to develop my knowledge of 
+          codiing far beyond this.
+        </p>
+
+    
+        <a href="Adhar-Website\index.html" target="_blank">
+        <button class="LightBtn linkhover"><h3 style="padding: 0;">Adhar Project Website</h3></button></a>
+      </div>
+
+
+      <div class="Flipcard" style="grid-area: AdharSite">
+        <div class="Inner-Flipcard">
+          <div class="Frontcover">
+        <img src="Images\Mockups\Adhar Mobile Mockup.png" class="Mobile" alt="">
+            <img src="Images\Mockups\Adhar Mockup.png" alt="">
+          </div>
+          <div class="Backcover">
+            <img src="Images\Mockups\Adhar Mobile Mockup.png" class="Mobile" alt="">
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="Flipcard" style="grid-area: DegSite" id="DegsSite">
+        <div class="Inner-Flipcard">
+          <div class="Frontcover">
+        <img src="Images\Degrees Mobile.png" class="Mobile" alt="">
+            <img src="Images\Degrees Laptop.png" alt="">
+          </div>
+          <div class="Backcover">
+            <img src="Images\Degrees Mobile.png" class="Mobile" alt="">
+          </div>
+        </div>
+      </div>
+      
+        
+            </section>
+
+            <section class="UIDesign dark-background">
+
+              <div style="grid-area: UIText">
+              <h2>UI/UX Design</h2>
+              
+              <p>Here are some examples of some prototypes of apps I've created during my time at university. These have all been designed on InVision, and have 
+                both had a full design process - from wireframes and mood boards to a functional prototype.
+              </p>
+              
+              </div>
+              <div style="grid-area: MoodsText" id="MoodsUI">
+               
+              <h3>Moods.</h3>
+                  <p>Moods. is a progressive web application that was designed from wireframes, to prototype and finally to a functioning website.</p>
+                  <p>It's purpose is to be a mental health companion app, which people can use to find support for <strong>anxiety</strong>, <strong>stress</strong>, <strong>sadness</strong>,
+                    <strong>anger</strong>, and <strong>happiness</strong>. It provides information and advice for those who may be suffering from the listed problems, and also features built-in 
+                  applications to help them - such as a <strong>to-do app</strong>, <strong>meditation app</strong>, <strong>anxiety</strong>, and more.</p>
+              <br>
+              <a href="https://projects.invisionapp.com/prototype/Moods-Final-Josh-Taylor-ckja8fedg00adtk01wfk8kmhx/play/e0e468ab" target="_blank">
+                  <button class="LightBtn linkhover"><h3 style="padding: 0;">Moods UI Design</h3></button> </a>
+                  <a href="Moods Site\index.html" target="_blank">
+                  <button class="LightBtn linkhover"><h3 style="padding: 0">Moods Website</h3></button></a>
+              
+              </div>
+              
+              <a style="grid-area: MoodsImage" href="https://projects.invisionapp.com/prototype/Moods-Final-Josh-Taylor-ckja8fedg00adtk01wfk8kmhx/play/e0e468ab" target="_blank">
+                  <img src="Images\Mockups\Moods. Cover-01.png" class="MoodsImage" alt=""> </a>
+              
+              <div style="grid-area: LinksText" id="StudentLinks">
+              <h3>Student Links</h3> 
+              <p>Student Links is a complete prototype that I designed on InVision, which was created for one of my assignments to create a unique application that 
+                would be useful.
+              </p>
+              <p>The app is designed to offer support and guidance to university students in their city. It provides <strong>support</strong> for student living and health, <strong>locations</strong> of things to do and places students may need, <strong>social media 
+                competitions</strong> that encourage healthy living and budgeting, and a <strong>student forum</strong>, which allows students to offer suggestions for the app and find further support.
+              </p>
+              
+              <br>
+              <a href="https://projects.invisionapp.com/prototype/Student-Links-Josh-Taylor-ckkyjfsdv00ayx201l6gb6ehs/play/d0277456" target="_blank">
+                  <button class="LightBtn linkhover"><h3 style="padding: 0;">Student Links UI Design</h3></button> </a>
+                  
+              </div>
+              <a style="grid-area: LinksImage" href="https://projects.invisionapp.com/prototype/Student-Links-Josh-Taylor-ckkyjfsdv00ayx201l6gb6ehs/play/d0277456" target="_blank">
+              <img src="Images\Mockups\Student Links Cover-01.PNG" class="LinksImage" alt=""> </a>
+              
+              
+              
+              
+              
+              
+                  </section>
+
+                    <section class="Other">
+                        <h2>University Experience</h2>
+                        <p>At DMU, over the first year and a half at DMU, I was able to cover a wide range of media formats before I was able to choose which modules to focus on.</p>
+                        <p>These include;</p>
+                        <ul>
+                          <li><p><strong>Radio Production - </strong>Recording voxpops and interviews with the public and editing them with Adobe Audition to create a short radio piece.</p></li>
+                          <li><p><strong>Video Production - </strong>Filming and editing footage with Adobe Premiere to create a short film.</p></li>
+                          <li><p><strong>Video Editing - </strong>Using Adobe Premiere and After Effects to create motion graphic videos.</p></li>
+                          <li><p><strong>TV Production - </strong>Working in a real TV studio with a large group to create various, timed TV shows.</p></li>
+                          <li><p><strong>Photography - </strong>Taking photos and editing them with Adobe Photoshop.</p></li>
+                        </ul>
+                     
+                        
+                            </section>
+                         
+
+                            <style>
+
+
+
+                            .UIDesign a {
+                              transition: 0.3s;
+                            }
+                            
+                            .UIDesign a:hover {
+                              transform: scale(1.02);
+                              transition: 0.3s;
+                            }
+                            
+          
+                            .UIDesign img {
+                              width: 60%;
+                              transition: 0.3s;
+                              margin: 4vh 20%
+                              
+                            }
+
+                            .UIDesign button{
+                              color: white;
+                              background-color: rgb(32, 32, 32);
+                              border: 0.3vh solid rgb(53, 179, 252);
+                              padding: 0.5vh 1vw;
+                              width: 100%;
+                              margin: 2vh 0vw;
+                              box-shadow: 0rem 0rem 0.5rem rgb(53, 179, 252); 
+                              transition: 0.3s;
+
+                            }
+                            
+                            .Websites button{
+                              color: white;
+                              background-color: rgb(32, 32, 32);
+                              border: 0.3vh solid rgb(32, 32, 32);
+                              padding: 0.5vh 1vw;
+                              width: 100%;
+                              margin: 2vh 0vw;
+                              box-shadow: 0rem 0rem 0.5rem rgb(58, 58, 58); 
+                              transition: 0.3s;
+                            }
+                            
+                            .UIDesign button:hover, .Websites button:hover{
+                              background-color: rgb(53, 179, 252);
+                              transition: 0.3s;
+                              transform: scale(1.04);
+                            }
+
+                            .Flipcard {
+                              position: relative;
+                              width: 90%;
+                              text-align: center;
+                              margin: 2vh 0vw 2vh 5vw;
+                            }
+                            
+                            
+                            .Inner-Flipcard {
+                              position: relative;
+                              width: 100%;
+                              height: 100%;
+                              text-align: center;
+                              transition: transform 0.8s;
+                              transform-style: preserve-3d;
+                              
+                            }
+                            
+                          
+                            .Frontcover img{
+                              width: 70%;
+                              align-self: center;
+                            }
+                            .Frontcover .Mobile{
+                              width: 22%;
+                            }
+                            .Backcover img{
+                              display: none;
+                              }
+                            
+                            .SocialMediaImages{
+                              display: flex;
+                              justify-content: center;
+                              width: 100%;
+                              margin: 5vh 0vw 2vh 0vw;
+                              flex-wrap: wrap;
+                            }
+                            
+                            .SocialMediaImages img{
+                              width: 75%;
+                              margin-bottom: 5vh;
+                            }
+                      
+                            @media screen and (min-width: 650px) {
+                          
+                            
+                          
+                              .UIDesign {
+                                background-color: rgb(32, 32, 32);
+                                color: white;
+                                display: grid;
+                                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                                grid-template-areas:
+                                  "UITitle UITitle UITitle UITitle UITitle"
+                                  "UIText UIText UIText UIText UIText"
+                                  "MoodsText  MoodsText MoodsText MoodsImage MoodsImage"
+                                  "LinksImage LinksImage LinksText LinksText LinksText";
+                              }
+                            
+                              .LinksImage {
+                                margin-right: 20%;
+                                margin-left: 0%;
+                                padding: 0vh;
+                              }
+                              
+                              .MoodsImage {
+                                margin-left: 20%;
+                                padding: 0vh;
+                              }
+                              .UIDesign button, .Websites button{
+                                width: 100%;
+                              
+                              }
+                              
+                              .SocialMediaImages{
+                                justify-content: space-between;
+                            
+                              }
+                              
+                              .SocialMediaImages img{
+                                width: 45%;
+                            
+                              }
+                              
+                            }
+                            
+                            /* Laptop Screen size */
+                            @media screen and (min-width: 1000px) {
+                        
+                              .Websites {
+                                display: grid;
+                                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                                grid-template-areas: "WebsiteText WebsiteText WebsiteText WebsiteText WebsiteText"
+                                "EcommerceImage EcommerceImage EcommerceText EcommerceText EcommerceText"
+                                "MoodsText MoodsText MoodsText MoodsSite MoodsSite"
+                                "UniSite UniSite AwarenessText AwarenessText AwarenessText"
+                                "AdharText AdharText AdharText AdharSite AdharSite"
+                                "GHSite GHSite GHText GHText GHText"
+                                "DegreesText DegreesText DegreesText DegSite DegSite";
+                                align-items: center;
+                                
+                              }
+                              
+                              .WebsiteDescription {
+                                margin: 10vh 0vw;
+                              }
+                              .Websites button{
+                                width: 100%;
+                                margin: 2vh 0vw
+                              }
+                            
+                            
+                            
+                            
+                              .Flipcard {
+                                position: relative;
+                                width: 98%;
+                                height: 90%;
+                                margin: 5vh 0vw 5vh 1vw;
+                                text-align: center;
+                                perspective: 50rem;
+                                align-content: center;
+                                
+                              }
+                              
+                              #UniSite, #GHSite{
+                                margin: 5vh 1vw 5vh 0vw;
+                                align-content: center;
+                              }
+                            
+                              #UniSite img{
+                                margin-top: 5vh;
+                              }
+                              .Inner-Flipcard {
+                                position: relative;
+                                width: 100%;
+                                height: 100%;
+                                text-align: center;
+                                transition: transform 0.8s;
+                                transform-style: preserve-3d;
+                                align-items: center;
+                                justify-content: center;
+                              
+                              }
+                              
+                              
+                              
+                              
+                              
+                              .Frontcover, .Backcover {
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                -webkit-backface-visibility: hidden; 
+                                backface-visibility: hidden;
+                                align-items: center;
+                                align-content: center;
+                                
+                              }
+                              
+                              
+                              .Backcover {
+                                transform: rotateY(180deg);
+                                z-index: 0;
+                                
+                              }
+                              
+                              .Backcover img{
+                                display: inline;
+                                height: 100%;
+                              }
+                              
+                              .Frontcover img{
+                                width: 100%;
+                                align-self: center;
+                                align-items: center;
+                               
+                              
+                              }
+                              
+                              .Frontcover .Mobile{
+                                width: 50%;
+                                margin-bottom: 10%;
+                                
+                              }
+                            
+                            .SocialMediaImages img{
+                              width: 23%;
+                            
+                            }
+                            
+
+                            }
+                            
+                            
+                            
+                            @media screen and (min-width: 1200px) {
+                              .Frontcover {
+                                display: flex;
+                                  
+                                }
+                                
+                                .Flipcard:hover .Inner-Flipcard {
+                                  transform: rotateY(180deg);
+                                }
+                            
+                                #UniSite img{
+                                  margin-top: 0vh;
+                                }
+                                .Frontcover img{
+                                  width: 100%;
+                                  align-self: center;
+                                
+                                }
+                                
+                                .Frontcover .Mobile{
+                                  display: none
+                                  
+                                }
+                            
+                 
+                 
+                                
+                                .ProjectText, .Projects button{
+                                  font-size: 1.1rem;
+                                }
+                            }
+      
+                            
+                              
+            
+                            
+                            </style>
+<section>
+  <h2>Interested?</h2>
+
+  <p>I want to offer my support for any of your digital needs. As I work on a freelance basis, I can work with you personally to ensure I can support on <strong>your needs</strong>, 
+    finding solutions to any challenges and working with you to improve on your online content.
+  </p>
+
+  <p>I've worked on various, complex projects for the last four years, to the point that I feel up to face any challenge. If you're in need of some digital support, please feel free to contact me 
+    to see where I can help.
+  </p>
+  <a href="Contact.html" class="linkhover"><button class="LightBtn linkhover"><h3>Get in touch</h3></button></a>
+
+</section>
+
+
+<footer id="Footer" style="position: relative; overflow: hidden; z-index: 0;">
+        
+  <div class="FooterRectangleContainer">
+    <svg width="80vw" height="80vh"  viewBox="0 0 750 750">
+
+      <g transform="rotate(-134.99992 382.63300163 382.63300163)">
+        <rect class="bottomshadow1" width="404" height="81.601"  opacity="0.5"x="218.967" y="161.008" fill="rgb(0,0,0)"/> 
+        <rect class="bottomshadow5"  width="619" height="103.856" opacity="0.5"x="73.133" y="252.315" fill="rgb(0,0,0)"/>
+        <rect class="bottomshadow4"  width="551" height="56.049" opacity="0.5"x="129.133" y="365.886" fill="rgb(0,0,0)"/>
+        <rect class="bottomshadow3"  width="563" height="99.735" opacity="0.5"x="98.967" y="431.475" fill="rgb(0,0,0)"/>
+        <rect class="bottomshadow2" width="418" height="83.25" opacity="0.5"x="204.967" y="541.008" fill="rgb(0,0,0)"/>
+
+       <rect class="bottomrect1" width="404" height="81.601"  x="218.967" y="151.008" fill="rgb(37,65,178)"/> 
+       <rect class="bottomrect5"  width="619" height="103.856" x="73.133" y="242.315" fill="rgb(37,65,178)"/>
+       <rect class="bottomrect4"  width="551" height="56.049" x="129.133" y="355.886" fill="rgb(37,65,178)"/>
+       <rect class="bottomrect3"  width="563" height="99.735" x="98.967" y="421.475" fill="rgb(37,65,178)"/>
+       <rect class="bottomrect2" width="418" height="83.25" x="204.967" y="531.008" fill="rgb(37,65,178)"/>
+       
+</g>
+      </svg>
+      </div>
+
+        <div class="FooterDiv">
+     
+          <a href="mailto:joshsgt2004@gmail.com"><h2><span style="color: rgb(53, 179, 252)">joshsgt2004</span>@gmail<span style="color: rgb(53, 179, 252)">.</span>com</h2></a><br>
+          <h3>Contact <span style="color: rgb(53, 179, 252)">JT Digital</span>  for any enquiries regarding:</h3> 
+          <ul style="margin-top: 1vh;">
+            <li><p>Web Design</p></li>
+            <li><p>Digital Marketing</p></li>
+            <li><p>Digital Design</p></li>
+            <li><p>Analytics</p></li>
+            <li><p>Project Management</p></li>
+            <li><p>Freelance</p></li>
+          </ul>
+ 
+          <div class="FooterSocials">
+            <a href="mailto:joshsgt2004@gmail.com" target="_blank" style="margin-left: 0;" class="fa fa-envelope linkhover footer-icon"></a>
+            <a href="https://twitter.com/JT_WebDesigns" target="_blank" class="fa fa-facebook linkhover footer-icon"></a>
+            <a href="https://www.instagram.com/jt_webdesigns/" target="_blank" class="fa fa-instagram linkhover footer-icon"></a>
+            <a href="https://www.linkedin.com/in/joshsgt20/" target="_blank" class="fa fa-linkedin linkhover footer-icon"></a>    
+         
+          </div>
+     
+          <ul class="FooterLinks">
+            <li style="margin-right: 3vw"><a href="index.html" class="linkhover">Home</a></li>
+            <li style="margin-right: 3vw"><a href="Services.html" class="linkhover">Services</a></li>
+            <li style="margin-right: 3vw"><a href="Experience.html" class="linkhover">Experience</a></li>
+            <li style="margin-right: 3vw"><a href="Contact.html" class="linkhover">Contact</a></li>
+          </ul>
+
+                </div>
+    
+  </footer>
+
+</main>
+</div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" 
+  integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg==" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" 
+  integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw==" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.7/dist/barba.umd.min.js"></script>
+<script src="js/app.js"></script>
+  <script src="js/helper.js"></script>
+  <script src="js/main.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+
+
+</body>
+</html>
+

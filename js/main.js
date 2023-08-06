@@ -73,6 +73,8 @@ function pageTransitionOut(container) {
 
 }
 
+
+
 // Function to animate the content of each page
 function contentAnimation(container) {
 
@@ -129,14 +131,18 @@ function contentAnimation(container) {
     })
 
 
+    
+    .to("#AdditionalInfo",{
+      duration: .4,
+      translateY: 0,
+      delay: -1,
+      opacity: 1,
 
-    .from(container.querySelector('.TextContainer'), {
-      duration: .6,
-      translateX: -80,
-      opacity: 0,
-      delay: -2,
-      ease: 'power2.out',
     })
+
+
+
+
 
     .from(".slider-icon",{
       duration: .5,
@@ -149,10 +155,62 @@ function contentAnimation(container) {
 
     })
 
+
+    .from(".Exp-Section",{
+      duration: .8,
+      translateY: 550,
+      stagger: 0.5,
+      opacity: 0,
+      delay: -2.1,
+      ease: 'power2',
+
+    })
+
+    .from(".Services-Section",{
+      duration: .8,
+      translateY: -550,
+      stagger: 0.5,
+      opacity: 0,
+      delay: -1.8,
+      ease: 'power2',
+
+    })
+
+
+    
+    
+    .to(".exp-card",{
+      duration: .4,
+      translateY: 0,
+      stagger: 0.3,
+      opacity: 1,
+      delay: -1,
+      ease: 'power4',
+
+    })
+
+
+    .from(".contact-section",{
+      duration: .8,
+      translateX: 550,
+      stagger: 0.5,
+      opacity: 0,
+      delay: -2.1,
+      ease: 'power2',
+
+    }) 
+    .from(container.querySelector('.TextContainer'), {
+      duration: .8,
+      translateX: -80,
+      opacity: 0,
+      delay: -.7,
+      ease: 'power2.out',
+    })
     .from(container.querySelector('.ContactImage'), {
       duration: 0.5,
       scaleY: 0,
       autoAlpha: 0,
+      delay: -.3,
       ease: 'linear.easeNone'
     })
 
@@ -163,7 +221,7 @@ function contentAnimation(container) {
 
     // Scroll Animations
 
-    .to(".card",{
+    .to(".scroll-card",{
       scrollTrigger: {
         trigger: ".CardContainer",
         start: "top 90%",
@@ -194,8 +252,8 @@ function contentAnimation(container) {
     .from(".ContactImg",{
       scrollTrigger: {
         trigger: ".ContactInfo",
-        start: "top 80%",
-        end: "top 50%",
+        start: "top 70%",
+        end: "top 40%",
         scrub: 3,
         toggleActions: "play none none none",
       },
@@ -300,6 +358,69 @@ function contentAnimation(container) {
     })
 
 
+
+
+    .from(".main1",{
+      scrollTrigger: {
+        trigger: ".panel1",
+        pin: ".panel1",
+        pinSpacing: false,
+        start: "top top",
+        end: "+=100",
+        scrub: 2,
+         }
+    })
+
+    .from(".main2",{
+      scrollTrigger: {
+        trigger: ".panel2",
+        pin: ".panel2",
+        pinSpacing: false,
+        start: "top top",
+        end: "+=100",
+        scrub: 2,
+
+
+      }
+    })
+    .from(".main3",{
+      scrollTrigger: {
+        trigger: ".panel3",
+        pin: ".panel3",
+        pinSpacing: false,
+        start: "top top",
+        end: "+=100",
+        scrub: 2,
+  
+      }
+    })
+    
+    .from(".main4",{
+      scrollTrigger: {
+        trigger: ".panel4",
+        pin: ".panel4",
+        pinSpacing: false,
+        start: "top top",
+        end: "+=100",
+        scrub: 2,
+  
+      }
+    })
+
+    .from(".main5",{
+      scrollTrigger: {
+        trigger: ".panel5",
+        pin: ".panel4",
+        pinSpacing: false,
+        start: "top top",
+        end: "+=100",
+        scrub: 2,
+  
+      }
+    })
+
+
+    
     .call(scrollAnimation, [container], 'start')
 
 
@@ -309,7 +430,6 @@ function contentAnimation(container) {
   }
 
 
-  
 
 
 $(function() {
@@ -343,4 +463,34 @@ barba.hooks.enter(() => {
 
 
 
+//
+//.to(".panel1",{
+ // scrollTrigger: {
+   // trigger: ".panel",
+    //pin: true,
+    //pinSpacing: false,
+  //  scrub: 1,
+  ////  start: "0% 0%",
+   // end: "bottom+=1000 bottom",
 
+//  },
+//  x:0,
+ // ease: 'power4.out'
+//})
+
+
+
+//.to(".panel2",{
+  //scrollTrigger: {
+ //   trigger: ".panel1",
+ //   start: "bottom top",
+ //   end: "bottom+=1200 bottom",
+ //   pin: true,
+ //   pinSpacing: false,
+ //   scrub: 3,
+ //   markers: true
+ 
+ // },
+//  x:0,
+ // ease: 'power4.out'
+//})

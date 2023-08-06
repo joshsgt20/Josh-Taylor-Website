@@ -1,350 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Josh Taylor - Portfolio Home</title>
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,800;1,900&display=swap" rel="stylesheet">
-
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css\style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
 
-  <div class="transition-container">
-    <div class="transition-slide"></div>
-    <div class="transition-slide2"></div>
-    <div class="transition-slide3"></div>
-    <div class="transition-slide4"></div>
-    <div class="transition-slide5"></div>
+  <div class="container">
+    <input type="radio" name="slider" id="item-1" checked>
+    <input type="radio" name="slider" id="item-2">
+    <input type="radio" name="slider" id="item-3">
+  <div class="cards">
+    <label class="card" for="item-1" id="song-1">
+      <img src="https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80" alt="song">
+    </label>
+    <label class="card" for="item-2" id="song-2">
+      <img src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80" alt="song">
+    </label>
+    <label class="card" for="item-3" id="song-3">
+      <img src="https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" alt="song">
+    </label>
   </div>
-<div class="cursor"></div>
-<header>
-    <nav>
-        <h1 id="Title"><span>JT</span> Portfolio</h1>
-        <ul class="nav-links testlinks" id="Menu">
-            <li class="home-link"><a href="index.html">Home</a></li>
-            <li class="work-link"><a href="My_Work.html">My Work</a></li>
-            <li class="contact-link"><a href="Contact.html">Contact</a></li>
-            <li class="blog-link"><a href="Blog.html">Blog</a></li>
-           
-        </ul>
-        <div class="Hamburger" onclick="AnimateMenu(this)">
-            <span class="menuIcon material-icons">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-            </span>
-        
-        </div>
-
-        <ul class="MobileMenu">
-            <li><a class="MobileMenuLink" href="index.html">Home</a></li>
-            <li><a class="MobileMenuLink" href="My_Work.html">My Work</a></li>
-            <li><a class="MobileMenuLink" href="Contact.html">Contact</a></li>
-            <li><a class="MobileMenuLink" href="Blog.html">Blog</a></li>
-            <br>
-            <li><a href="https://twitter.com/JT_WebDesigns" target="_blank" class="fa fa-twitter"></a></li><br>
-            <li><a href="https://www.linkedin.com/in/joshsgt20/" target="_blank" class="fa fa-linkedin"></a></li><br>
-            <li><a href="https://www.instagram.com/jt_webdesigns/" target="_blank" class="fa fa-instagram"></a></li>
-        </ul>
-    
-    </nav>
-
-  
-
-    </header>
-
-    <!-- Better to wrap barba container as close as possible -->
-    <div data-barba="wrapper" style="overflow: hidden;" >
-      <!-- Only this section changes on link navigation -->
-      <main data-barba="container" data-barba-namespace="Home">
-
-        <div class="Slider" style="position: relative; z-index: 0;">
-          <div  style="position:absolute; top: -15%; left:-25%; z-index: -5;";>
-            <svg width="80vw" height="80vh"  viewBox="0 0 765.266 765.266">
-              <defs>
-                <filter id="f1" z="-10" x="0" y="0" width="404" height="81.6" >
-                  <feOffset result="offOut" in="SourceAlpha" dx="8" dy="8" />
-                  <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
-                  <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
-                </filter>
-              </defs>
-                <g transform="rotate(-134.99992 382.63300163 382.63300163)" class="recty">
-                 <rect class="rect1" width="404" height="81.601"  x="218.967" y="151.008" fill="rgb(37,65,178)" filter="url(#f1)"/> 
-                 <rect class="rect5"  width="619" height="103.856" x="73.133" y="242.315" fill="rgb(37,65,178)"filter="url(#f1)"/>
-                 <rect class="rect4"  width="551" height="56.049" x="129.133" y="355.886" fill="rgb(37,65,178)"filter="url(#f1)"/>
-                 <rect class="rect3"  width="563" height="99.735" x="98.967" y="421.475" fill="rgb(37,65,178)"filter="url(#f1)"/>
-                 <rect class="rect2" width="418" height="83.25" x="204.967" y="531.008" fill="rgb(37,65,178)"filter="url(#f1)"/>
-        </g>
-              </svg>
-            </div>
-          
-              <h1 class="Welcome" style="grid-area: WelcomeText; z-index: 25!; ">Hi, I'm a <span>digital marketer</span>.<br>With experience and knowledge of:<br>               
-                   - <span>social media marketing</span>; 
-                  <br>- <span>digital design</span>;
-                  <br>- <span>web and UI/UX design</span>;
-                  <br>- <span>online campaigning</span>.
-                  <div style="display: flex; ">
-                  <div class="typewriter">
-                        <h1>Hi, I'm a digital marketer. </h1>
-                      </div></div>
-           
-              </h1>
-  <br>
-          
-              <div class="Intro_Text" style="grid-area: IntroText">
-                  <p>A <strong>Digital Marketing Executive</strong> and <strong>Scrum Master </strong>with a <strong>First-Class Honours (BSc)</strong>
-                     in Media Production.
-                  </p>
-              </div>
-  <br>
-          
-  <div class="SocialMedia" style="grid-area: SocialMediaIcons">
-      <a href="https://twitter.com/JT_WebDesigns" target="_blank" style="margin-left: 0;" class="fa fa-twitter"></a>
-      <a href="https://www.linkedin.com/in/joshsgt20/" target="_blank" class="fa fa-linkedin"></a>    
-      <a href="https://www.instagram.com/jt_webdesigns/" target="_blank" class="fa fa-instagram"></a>
-   
-  
-  </div>
-  
-      
-  
-  </div>
-   
-<section>
-  <h2>What I Do</h2>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente voluptatem molestiae, voluptates harum porro aliquid doloribus nihil culpa ex dolorum suscipit soluta adipisci accusamus laborum veniam omnis voluptas ullam ducimus.</p>
-    <div class="Skills">
-     
-<div class="SkillCard"><h3>Hello</h3> <p>Lorem ipsum, dolor sit amet consectetur</p></div>
-<div class="SkillCard"><h3>Hello</h3></div>
-<div class="SkillCard"><h3>Hello</h3></div>
-
-    </div>
-
-    <div>
-        <h2>What I have to offer</h2>
-    </div>
-
-    <div class="HoverContainer" id="Stressed_Container">
-      <div class="HoverBackground" id="Stressed_Background" style="width: 100px; background-color: blue;;">
-              <div class="FaceShadow" id="Stressed_Shadow" style="width: 100px; background-color: red;;">
-                <a href="">
-              <img src="Images\Moods. Cover-01.png" alt="Stressed Mood Face Image" style="width: 100px; background-color: red;;">
-            </a>
-          </div>
-          <h2 class="MoodTitle" id="StressedTitle">Websites</h2>
-     
-      </div>
-  </div>
-
-  <ul>
-    <li>Websites - UI Design, SEO, CMS </li>
-    <li>Emails</li>
-    <li>Social Media - graphics, posting </li>
-    <li>Graphics</li>
-  </ul>
-  <h2>Scrum Master</h2>
-  <p>Stakeholder management, project management, communication, etc.</p>
-</section>
-
-<section>
-  <h2>About Me</h2>
-
-  <div class="HoverContainer">
-    
-
-    <a href="">
-  <img class="hello" src="Images\Moods. Cover-01.png" alt="Stressed Mood Face Image" style="width: 100px">
-</a>
-
-<h2 class="MoodTitle" id="StressedTitle">Websites</h2>
-
-
-</div>
-</section>
-
-
-
-    <style>
-
-.SkillCard p{
-    display:none;
-}
-.SkillCard:hover p{
-    display: block;
-}
-.contact{
-    background-color: rgb(32, 32, 32);
-    color: white;
-}
-        
-        input[type=text],input[type=email], textarea {
-          width: 100%;
-          padding: 12px;
-          border: 1px solid;
-          border-radius: .5vw;
-          box-sizing: border-box;
-          margin: 1vh 0px;
-          resize: vertical;
-          cursor: none;
-          z-index: 1;
-          font-family: "Poppins", sans-serif;
-        }
-        
-        button[type=submit] {
-          background-color: rgb(53, 179, 252);
-          color: white;
-          padding: 12px 20px;
-          border: none;
-          border-radius: .5vw;
-          cursor: none;
-          transition: 0.3s;
-          font-family: "Poppins", sans-serif;
-        }
-        
-        button[type=submit]:hover {
-          background-color: rgb(44, 144, 202);
-          transition: 0.3s;
-        }
-        
-        .two_fields{
-            display: flex;
-            justify-content: flex-start;
-            cursor: none;
-        }
-
-        .small_fields{
-            width: 50%;
-            margin-right: 20px;
-        }
-
-        form{
-            margin: 2vh 0;
-        }
-        </style>
-
-
-
-
-
-
-</main>
-</div>
-
-
-  <footer style="position: relative; overflow: hidden; z-index: 0;">
-
-    <div  style="position:absolute; top: 20%; right:-30%; z-index: -1;">
-      <svg width="80vw" height="80vh"  viewBox="0 0 765.266 765.266">
-        <defs>
-          <filter id="f1" z="-10" x="0" y="0" width="404" height="81.6" >
-            <feOffset result="offOut" in="SourceAlpha" dx="8" dy="8" />
-            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
-            <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
-          </filter>
-        </defs>
-          <g transform="rotate(-134.99992 382.63300163 382.63300163)">
-           <rect class="rect1" width="404" height="81.601"  x="218.967" y="151.008" fill="rgb(37,65,178)" filter="url(#f1)"/> 
-           <rect class="rect5"  width="619" height="103.856" x="73.133" y="242.315" fill="rgb(37,65,178)"filter="url(#f1)"/>
-           <rect class="rect4"  width="551" height="56.049" x="129.133" y="355.886" fill="rgb(37,65,178)"filter="url(#f1)"/>
-           <rect class="rect3"  width="563" height="99.735" x="98.967" y="421.475" fill="rgb(37,65,178)"filter="url(#f1)"/>
-           <rect class="rect2" width="418" height="83.25" x="204.967" y="531.008" fill="rgb(37,65,178)"filter="url(#f1)"/>
-  </g>
+  <div class="player">
+    <div class="upper-part">
+      <div class="play-icon">
+        <svg width="20" height="20" fill="#2992dc" stroke="#2992dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-play" viewBox="0 0 24 24">
+          <defs/>
+          <path d="M5 3l14 9-14 9V3z"/>
         </svg>
-        </div>
-    <h2>Contact Form</h2>
-    <p>
-        Fill in the form below to contact me. I'll get back to you soon.
-      </p>
-    <div>
-        <div>
-          <div>
-
-            <div>
-              <form action="https://api.web3forms.com/submit" method="POST" id="form" >
-                <input type="hidden" name="access_key" value="81018c34-8ea8-480d-8af1-6dcb526855e6" />
-                <input type="hidden" name="subject" value="New Submission from Web3Forms" />
-                <input type="checkbox" name="botcheck" id="" style="display: none;" />
-      
-                <div class="two_fields">
-                  <div class="small_fields">
-                    <label for="fname" c>First Name</label>
-                    <input type="text" name="name" id="first_name" placeholder="First Name" required />
-                  </div>
-                  <div class="small_fields">
-                    <label for="lname" >Last Name</label>
-                    <input type="text" name="last_name" id="lname" placeholder="Last Name" required />
-                  </div>
-                </div>
-      
-                <div class="two_fields">
-                  <div class="small_fields">
-                    <label for="email" >Email Address</label>
-                    <input type="email" name="email" id="email" placeholder="Your email address" required/>
-                  </div>
-      
-                  <div class="small_fields">
-                    <label for="phone">Phone Number</label>
-                    <input type="text" name="phone" id="phone" placeholder="Your phone number" required />
-                  </div>
-                </div>
-                <div>
-                  <label for="message">Your Message</label>
-      
-                  <textarea rows="5" name="message" id="message" placeholder="Your Message" required></textarea>
-                </div>
-                <div>
-                  <button type="submit" >
-                   Send Email
-                  </button>
-                </div>
-                <p id="result"></p>
-              </form>
-            </div>
-          </div>
-        </div>
       </div>
-    </form>
-    <p>Website created by Josh Taylor.</p>
-    <p>Email me at joshsgt2004@gmail.com for any enquiries.</p>
-    
-
-    
-  </footer>
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" 
-  integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg==" crossorigin="anonymous"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" 
-  integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw==" crossorigin="anonymous"></script>
-
-
-
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
-  <!-- Barba Core -->
-  <script src="https://unpkg.com/@barba/core"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.7/dist/barba.umd.min.js"></script>
-<script src="js/app.js"></script>
-  <!-- Some basic helper functions -->
-  <script src="js/helper.js"></script>
-
-  <!-- Main JS file -->
-  <script src="js/main.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+      <div class="info-area" id="test">
+        <label class="song-info" id="song-info-1">
+          <div class="title">Bunker</div>
+          <div class="sub-line">
+            <div class="subtitle">Balthazar</div>
+            <div class="time">4.05</div>
+          </div>
+        </label>
+        <label class="song-info" id="song-info-2">
+          <div class="title">Words Remain</div>
+          <div class="sub-line">
+            <div class="subtitle">Moderator</div>
+            <div class="time">4.05</div>
+          </div>
+        </label>
+        <label class="song-info" id="song-info-3">
+          <div class="title">Falling Out</div>
+          <div class="sub-line">
+            <div class="subtitle">Otzeki</div>
+            <div class="time">4.05</div>
+          </div>
+        </label>
+      </div>
+    </div>
+    <div class="progress-bar">
+      <span class="progress"></span>
+    </div>
+  </div>
+  </div>
   
+  
+  <style>
+
+
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+    font-family: 'DM Sans', sans-serif;
+    transition: background .4s ease-in;
+    background-color: #c394f8;
+    
+    &.blue {
+      background-color: #428aa6;
+    }
+  }
+  
+  input[type=radio] {
+    display: none;
+  }
+  
+  .card {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: transform .4s ease;
+    cursor: pointer;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 800px;
+    max-height: 600px;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cards {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  #item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
+    transform: translatex(-40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+  }
+  
+  #item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
+    transform: translatex(40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+  }
+  
+  #item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
+    transform: translatex(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+    
+    img {
+      box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+    }
+  }
+  
+  .player {
+    background-color: #fff;
+    border-radius: 8px;
+    min-width: 320px;
+    padding: 16px 10px;
+  }
+  
+  .upper-part {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    height: 36px;
+    overflow: hidden;
+  }
+  
+  .play-icon{ margin-right: 10px; }
+  
+  .song-info {
+    width: calc(100% - 32px);
+    display: block;
+  }
+  
+  .song-info .title {
+    color: #403d40;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  
+  .sub-line {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .subtitle, .time {
+    font-size: 12px;
+    line-height: 16px;
+    color: #c6c5c6;
+  }
+  
+  .time {
+    font-size: 12px;
+    line-height: 16px;
+    color: #a5a5a5;
+    font-weight: 500;
+    margin-left: auto;
+  }
+  
+  .progress-bar {
+    height: 3px;
+    width: 100%;
+    background-color: #e9efff;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    display: block;
+    position: relative;
+    width: 60%;
+    height: 100%;
+    background-color: #2992dc;
+    border-radius: 6px;
+  }
+  
+  .info-area {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    transition: transform .4s ease-in;
+  }
+  
+  #item-2:checked ~ .player #test {
+    transform: translateY(0);
+  }
+  
+  #item-2:checked ~ .player #test  {
+    transform: translateY(-40px);
+  }
+  
+  #item-3:checked ~ .player #test  {
+    transform: translateY(-80px);
+  }
+  </style>
+  
+  <script>
+  
+  $('input').on('change', function() {
+    $('body').toggleClass('blue');
+  });
+  
+  </script>
 
 </body>
 </html>
-

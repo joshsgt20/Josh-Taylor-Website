@@ -1,81 +1,93 @@
-
-
-
-
-
 //Movement animation
-const StressedBackground = document.querySelector("#Stressed_Background");
-const StressedContainer = document.querySelector("#Stressed_Container");
-
-const AnxiousBackground = document.querySelector("#Anxious_Background");
-const AnxiousContainer = document.querySelector("#Anxious_Container");
-
+const card = document.querySelector(".hovercard");
+const card2 = document.querySelector(".hovercard2");
+const container = document.querySelector(".hovercontainer");
+const container2 = document.querySelector(".hovercontainer2");
 
 
 //Items
-
-const StressedImage = document.querySelector("#Stressed_Shadow img");
-const StressedShadow = document.querySelector("#Stressed_Shadow");
-const StressedTitle = document.querySelector("#StressedTitle");
-
-const AnxiousImage = document.querySelector("#Anxious_Shadow img");
-const AnxiousShadow = document.querySelector("#Anxious_Shadow");
-const AnxiousTitle = document.querySelector("#AnxiousTitle");
+const title = document.querySelector(".hovertitle");
+const sneaker = document.querySelector(".hoverimage img");
+const purchase = document.querySelector(".hoverbutton");
+const description = document.querySelector(".hoverinfo h3");
 
 
-
+const title2 = document.querySelector(".hovertitle2");
+const sneaker2 = document.querySelector(".hoverimage2 img");
+const purchase2 = document.querySelector(".hoverbutton2");
+const description2 = document.querySelector(".hoverinfo2 h3");
 
 
 //Moving animation event
-StressedContainer.addEventListener("mousemove", (e) => {
-    let xAxis = (window.innerWidth / 2 - e.pageX) / 30;
-    let yAxis = (window.innerHeight / 2 - e.pageY) / 30;
-    StressedBackground.style.transform = `rotateY(${yAxis}deg) rotateX(${xAxis}deg)`
+container.addEventListener("mousemove", (e) => {
+    let xAxis = (window.innerWidth / 2 - e.pageX) / 50;
+    let yAxis = (window.innerHeight / 2 - e.pageY) / 50;
+    card.style.transform = `rotateY(${yAxis}deg) rotateX(${xAxis}deg)`
+
+});
+
+container2.addEventListener("mousemove", (e) => {
+    let xAxis = (window.innerWidth / 2 - e.pageX) / 50;
+    let yAxis = (window.innerHeight / 2 - e.pageY) / 50;
+    card2.style.transform = `rotateY(${yAxis}deg) rotateX(${xAxis}deg)`
 
 });
 
 
-
-//Animate In - Stressed
-StressedContainer.addEventListener('mouseenter', (e) =>{
-    StressedBackground.style.transition = 'none';
+//Animate In
+container.addEventListener('mouseenter', (e) =>{
+    card.style.transition = 'none';
 //Popout
-StressedTitle.style.transform = "translateZ(100px)";
-StressedTitle.style.transition = '0.5s ease';
+    title.style.transform = "translateZ(50px)";
+    title.style.transition = '0.5s ease';
 
-    StressedShadow.style.transform = "translateY(20px) translateZ(50px)";
-    StressedShadow.style.transition = '0.5s ease';
-
-StressedImage.style.transform = "translateY(20px)";
-StressedImage.style.transition = '0.5s ease';
-
-
+    sneaker.style.transform = "translateZ(50px) rotatez(-10deg)";
+    purchase.style.transform = "translateZ(50px)";
+    sizes.style.transform = "translateZ(50px)";
 })
+
+
 //Animate Out
-StressedContainer.addEventListener('mouseleave', (e) => {
-    StressedBackground.style.transition = '0.5s ease';
-    StressedBackground.style.transform = `rotateY(0deg) rotateX(0deg)`;
+container.addEventListener('mouseleave', (e) => {
+    card.style.transition = '0.5s ease';
+    card.style.transform = `rotateY(0deg) rotateX(0deg)`;
 
     //Popback
-    StressedTitle.style.transform = "translateZ(0px)";
-    StressedTitle.style.transition = '0.5s ease';
+    title.style.transform = "translateZ(0px)";
+    title.style.transition = '0.5s ease';
 
-    StressedShadow.style.transform = "translateY(0px) translateZ(0px)";
-    
-    StressedImage.style.transform = "translateY(0px) translateZ(0px)";
-    StressedImage.style.transition = '0.5s ease';
-
+    sneaker.style.transform = "translateZ(0px) rotatez(0deg)";
+    purchase.style.transform = "translateZ(0px)";
+    sizes.style.transform = "translateZ(0px)";
 } );
 
 
-<div class="HoverContainer" id="Stressed_Container">
-<div class="HoverBackground" id="Stressed_Background" style="width: 100px; background-color: blue;;">
-        <div class="FaceShadow" id="Stressed_Shadow" style="width: 100px; background-color: red;;">
-          <a href="">
-        <img src="Images\Moods. Cover-01.png" alt="Stressed Mood Face Image" style="width: 100px; background-color: red;;">
-      </a>
-    </div>
-    <h2 class="MoodTitle" id="StressedTitle">Websites</h2>
 
-</div>
-</div>
+
+
+////////SECOND SHOE AS A TEST
+container2.addEventListener('mouseenter', (e) =>{
+    card2.style.transition = 'none';
+//Popout
+    title2.style.transform = "translateZ(50px)";
+    title2.style.transition = '0.5s ease';
+
+    sneaker2.style.transform = "translateZ(50px) rotatez(-10deg)";
+    sneaker2.style.transition = '0.5s ease';
+    purchase2.style.transform = "translateZ(50px)";
+    purchase2.style.transition = '0.5s ease';
+})
+
+
+//Animate Out
+container2.addEventListener('mouseleave', (e) => {
+    card2.style.transition = '0.5s ease';
+    card2.style.transform = `rotateY(0deg) rotateX(0deg)`;
+
+    //Popback
+    title2.style.transform = "translateZ(0px)";
+    title2.style.transition = '0.5s ease';
+
+    sneaker2.style.transform = "translateZ(0px) rotatez(0deg)";
+    purchase2.style.transform = "translateZ(0px)";
+} );

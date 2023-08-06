@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Insert a short page description here. Two to four sentences if a good length. This content is sometimes, but not always, used by 
+    search engines to summarize the contents of your web page." >
+    <title>Josh Taylor - Portfolio Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+
+  <div class="transition-container">
+    <div class="transition-slide"></div>
+    <div class="transition-slide2"></div>
+    <div class="transition-slide3"></div>
+    <div class="transition-slide4"></div>
+    <div class="transition-slide5"></div>
+  </div>
+<div class="cursor"></div>
+<header>
+  <nav>
+    <h1 id="Title"><span>JT</span> Digital <span>&lt;/&gt;</span> </h1>
+    <ul class="nav-links linkhover" id="Menu">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Experience.html">Experience</a></li>
+        <li><a href="Contact.html">Contact</a></li>  
+    </ul>
+    <div class="Hamburger" id="Hamburger_Icon" onclick="AnimateMenu(this)">
+        <span class="menuIcon material-icons">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+        </span>
+    
+    </div>
+
+    <ul class="MobileMenu">
+      <li><a class="MobileMenuLink linkhover" href="index.html" onclick="toggleanimation()">Home</a></li>
+      <li><a class="MobileMenuLink linkhover" href="Services.html" onclick="toggleanimation()">Services</a></li>
+      <li><a class="MobileMenuLink linkhover" href="Experience.html" onclick="toggleanimation()">Experience</a></li>
+      <li><a class="MobileMenuLink linkhover" href="Contact.html" onclick="toggleanimation()">Contact</a></li>
+      <br>
+      <li><a href="https://twitter.com/JT_WebDesigns" aria-label="Twitter" target="_blank" class="fa fa-twitter linkhover"></a></li><br>
+      <li><a href="https://www.linkedin.com/in/joshsgt20/" target="_blank" class="fa fa-linkedin linkhover"></a></li><br>
+      <li><a href="https://www.instagram.com/jt_webdesigns/" target="_blank" class="fa fa-instagram linkhover"></a></li>
+  </ul>
+
+</nav>
+
+  
+
+    </header>
+
+    <!-- Better to wrap barba container as close as possible -->
+    <div data-barba="wrapper" style="overflow: hidden;" >
+      <!-- Only this section changes on link navigation -->
+      <main data-barba="container" data-barba-namespace="Home">
+
+        <div class="Slider" style="position: relative; z-index: 0; overflow: hidden;">
+          <div class="RectangleContainer">
+            <svg width="100vw" height="100vh"  viewBox="0 0 750 750">
+                <g transform="rotate(-44.99992 382.63300163 382.63300163)" class="recty">
+
+                  <rect class="shadow1" width="404" height="81.601"  opacity="0.3"x="218.967" y="161.008" fill="rgb(0,0,0)"/> 
+                  <rect class="shadow5"  width="619" height="103.856" opacity="0.3"x="73.133" y="252.315" fill="rgb(0,0,0)"/>
+                  <rect class="shadow4"  width="551" height="56.049" opacity="0.3"x="129.133" y="365.886" fill="rgb(0,0,0)"/>
+                  <rect class="shadow3"  width="563" height="99.735" opacity="0.3"x="98.967" y="431.475" fill="rgb(0,0,0)"/>
+                  <rect class="shadow2" width="418" height="83.25" opacity="0.3"x="204.967" y="541.008" fill="rgb(0,0,0)"/>
+
+                 <rect class="rect1" width="404" height="81.601"  x="218.967" y="151.008" fill="rgb(37,65,178)"/> 
+                 <rect class="rect5"  width="619" height="103.856" x="73.133" y="242.315" fill="rgb(37,65,178)"/>
+                 <rect class="rect4"  width="551" height="56.049" x="129.133" y="355.886" fill="rgb(37,65,178)"/>
+                 <rect class="rect3"  width="563" height="99.735" x="98.967" y="421.475" fill="rgb(37,65,178)"/>
+                 <rect class="rect2" width="418" height="83.25" x="204.967" y="531.008" fill="rgb(37,65,178)"/>
+        </g>
+              </svg>
+            </div>
+          
+              <h1 class="Welcome" style="grid-area: WelcomeText; z-index: 25!; ">Hi, I'm Josh.<br>A <span>Digital Marketer</span> & <span>Scrum Master</span>.<br>With skills & experience of:   <br>        
+                  <div style="display: inline-block;">
+                  <div class="typewriter1">
+                    - <span>web & UI/UX design</span>
+                      </div></div><br>
+
+                      <div style="display: inline-block;">
+                        <div class="typewriter2">
+                          - <span>digital marketing</span>
+                            </div></div><br>
+
+                            <div style="display: inline-block;">
+                              <div class="typewriter3">
+                                - <span>project management</span>
+                                  </div></div><br>
+
+                                  <div style="display: inline-block;">
+                                    <div class="typewriter4">
+                                      - <span>analytics</span>
+                                        </div></div>
+           
+              </h1>
+              <div class="Intro_Text" style="grid-area: IntroText">
+                  <p><strong>3 years</strong> of experience in <strong>work</strong> & <strong>freelance</strong>.<br><br> <strong>First-Class Honours (BSc)</strong>
+                     degree in Media Production (2021).</p>
+             
+
+              </div>
+  <br>
+
+  <div class="SocialMedia" style="grid-area: SocialMediaIcons">
+      <a href="https://twitter.com/JT_WebDesigns" target="_blank" style="margin-left: 0;" class="fa fa-facebook linkhover slider-icon"></a>
+      <a href="https://www.linkedin.com/in/joshsgt20/" target="_blank" class="fa fa-linkedin linkhover slider-icon"></a>    
+      <a href="https://www.instagram.com/jt_webdesigns/" target="_blank" class="fa fa-instagram linkhover slider-icon"></a>
+   
+  
+  </div>
+  
+      
+  
+  </div>
+   
+<section >
+  <h2>Welcome to JT Digital</h2>
+  <p>In todays world, digital content is massively influential on the success of any organisation, so I've decided to help.</p>
+  <p>As mentioned above, I'm Josh - a young and driven person based in North Bedfordshire. For the last 5 years, I've studied and worked in the digital world, 
+    gaining more experience, knowledge and confidence as I progress. I understand the importance of having an online presence, but equally understand this can
+     be a difficult and confusing journey to start on, which is where I believe I can make a difference.</p>
+
+    <div class="CardContainer">
+
+   <div class="card">
+        <img src="Icons\noun-digital-marketing-4613736.png" alt="">
+        <h3>Digital Marketing</h3>
+        <p>Social media, SEO, emails, blog posting and more. </p>
+   </div>
+
+   <div class="card">
+        <img src="Icons\noun-web-design-1118821.png" alt="">
+        <h3>Website Design</h3>
+        <p>Bespoke, functional websites built with code or a user friendly CMS.</p>
+   </div>
+
+   <div class="card">
+        <img src="Icons\noun-graphic-design-4102074.png" alt="">
+        <h3>Digital Design</h3>
+        <p>Online content, graphics, posters, logos and more.</p>
+       </div>
+       </div>
+
+</section>
+
+
+<div class="HoverSection">
+
+    
+<div class="hovercontainer">
+    <div class="hovercard">
+        <div class="hoverimage">
+            <div class="hovercircle"></div>
+            <img src="Icons\noun-web-design-1118821.png" alt="">
+        </div>
+        <div class="hoverinfo">
+            <h3 class="hovertitle">Travis Scott Jordans</h3>
+            <p>Official Jordan / Travis Scott shoe collab</p>
+   
+  
+                <button class="hoverbutton">Purchase</button>
+         
+        </div>
+    </div></div>
+
+    <div class="hovercontainer2">
+    <div class="hovercard2">
+        <div class="hoverimage2">
+            <div class="hovercircle2"></div>
+            <img src="Icons\noun-web-design-1118821.png" alt="">
+        </div>
+        <div class="hoverinfo2">
+            <h3 class="hovertitle2">Travis Scott Jordans</h3>
+            <p>Official Jordan / Travis Scott shoe collab</p>
+
+                <button class="hoverbutton2">Purchase</button>
+      
+        </div>
+    </div>
+
+
+</div>
+
+    <style>
+        
+
+        .HoverSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    perspective: 500px;
+        }
+.hovercontainer, .hovercontainer2{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;  
+}
+
+.hovercard, .hovercard2{
+    transform-style: preserve-3d;
+    padding: 4vh 1vw;
+    width: 100%; 
+transition: 0.3s;
+box-shadow: 0vw .5vw 1.2vw .4vw rgba(0,0,0,0.2);
+justify-content: center;
+text-align: center;
+border-radius: .5vw;
+height: fit-content;
+
+}
+
+.hoverimage, .hoverimage2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-out;
+    position: relative;
+
+}
+.hoverimage img, .hoverimage2 img{
+    width: 60%;
+    z-index: 2;
+    transition: all 0.5s ease-out;
+}
+
+.hovercircle, .hovercircle2{
+    aspect-ratio: 1/1;
+    height: 130%;
+    position: absolute;
+    background: linear-gradient(to right, rgba(53, 179, 252, 0.65),
+     rgba(240, 240, 240, 0.75));
+     border-radius: 50%;
+     z-index: 1;
+     transition: all 0.5s ease-out;
+}
+
+.hoverinfo h3, .hoverinfo2 h3{
+    transition: all 0.5s ease-out;
+    margin-top: 2vh;
+}
+
+.hoverinfo p, .hoverinfo2 p{
+    transition: all 0.5s ease-out;
+}
+
+
+
+.hoverbutton, .hoverbutton2{
+    width: 100%;
+    padding: 1rem 0rem;
+    background: #323232;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+    </style>
+</div>
+<section class="dark-background">
+        <h1 style="color:rgb(53, 179, 252)">What I do</h1>
+  <p>The world is becoming more and more digital by the day, making online presence become one of (if not the most) influential aspects of 
+    running a successful organisation. Having a strong brand, with consistant and relevant content across all your channels, is a fantastic way to bring more people to your door - and that's where I can help. </p>
+<a href="My_Work.html" class="linkhover"><button class="DarkBtn linkhover"><h3>Find out more about my services</h3></button></a>
+        <div class="GridContainer">
+<div class="GridText" style="grid-area:Text1">
+            <h3 style="color:rgb(53, 179, 252)">Web Design</h3> 
+          <p>With my knowledge and experience of web design, I'm able to create and maintain custom websites for any purpose - whether these are personal, business, ecommerce or anything else. Each website I build 
+            is created with usability in mind, ensuring great user experience across devices, excellent functionality and are optimised for SEO.  </p></div>
+          <img style="grid-area: Image1" class="GridImage1" src="Images\15- Macbook Pro.png" alt="">
+
+        <div class="GridText" style="grid-area:Text2">
+          <h3 style="color:rgb(53, 179, 252)">Digital Marketing</h3> 
+        <p>I've worked across a variety of organisations to create impactful marketing assets, producing valuable results that have lead to success. 
+           With this, I've created, scheduled and managed multiple social media accounts, created engaging marketing emails, written engaging blog posts, managed events and improved SEO (search engine optimisation).
+        </p>  </div>
+        <img style="grid-area: Image2"  class="GridImage2"src="Images\Blog Image 4.jpg" alt="">
+
+
+      <div class="GridText" style="grid-area:Text3">
+        <h3 style="color:rgb(53, 179, 252)">Digital Design</h3> 
+      <p>Before content can be posted, it has to be created. I have thorough experience in creating various types of assets, including online graphics, video content, posters, flyers and even some photography. I can work with you to produce engaging 
+        content that can build upon your organisations image, created to meet your own needs.
+      </p>  </div>
+      <img style="grid-area: Image3" class="GridImage3" src="Images\Advice 3 cropped.png" alt="">
+
+    <div class="GridText" style="grid-area:Text4">
+      <h3 style="color:rgb(53, 179, 252)">Project Management</h3> 
+    <p>Some projects require a more complex solution. In my current role as a Scrum Master and marketing executive, this is my every day responsibility, and something I feel can support other organisations with. 
+      If you're facing a challenge that you're not sure how to solve, we can work together to find a solution that works for you and your organisations success.
+    </p>  </div>
+    <img style="grid-area: Image4" class="GridImage4" src="Images\Blog Image 1.jpeg" >
+        </div>
+        
+    
+</section>
+
+<img>
+
+<section>
+  <h2>A bit about me</h2>
+  <img class="AboutImg" src="Images\IMG_9805.JPEG" alt="">
+  <h3>University</h3>
+
+<p>I graduated from university in 2021 after achieving a First-Class Honours (BSc) in Media Production, a course that allowed 
+  me to gain experience in almost all aspects of digital content creation. During my final two years, I specialised my degree 
+  in the areas I enjoyed the most and was the most skilled in - <Strong>web design</Strong>, <Strong>marketing</Strong> and <Strong>creative media entrepreneurship</Strong>.
+</p>
+
+<h3>Employment</h3>
+<p>After finishing university, I moved straight into full time work in the digital industry, gaining experiene in multiple business types. This includes working in Quality Assurance in a web design agency, and 
+  more recently as a Digital Marketing Executive and Scrum Master in a multi-national organisation, which incorporates multiple household brands - BSH (Bosch, Siemens, NEFF and Gaggenau). 
+</p>
+
+<a href="https://www.credly.com/badges/fc1c7aa9-b12c-4ee0-8229-69fce8b69d83/public_url" class="ScrumImage1 linkhover"><img src="Images\badge-psmii.svg" class="linkhover" alt=""></a>
+<a href="https://www.credly.com/badges/94e9d774-9ef8-4684-aaf0-d9487a4856a1/public_url" class="ScrumImage2 linkhover"><img src="Images\badge-psmi.svg" class="linkhover" alt=""></a>
+
+<h3>Freelance</h3>
+<p>In addition, I've completed a number of freelance jobs since 2019 - which started off after I completed a number of projects for a charity based in Leicester. </p>
+<a href="Experience.html" class="linkhover"><button class="LightBtn linkhover"><h3>Learn about my experience</h3></button></a>
+</section>
+
+
+
+
+<section class="dark-background" style="background: linear-gradient(-45deg, #1E1E1E, #1E1E1E, #1E1E1E, #2541B2);">
+  <h2 style="color:rgb(53, 179, 252)">Get in touch</h2>
+  <p>
+      Fill in the form below to contact me. I'll get back to you soon.
+    </p>
+  <div class="ContactForm" >
+    <div>
+      <div>
+
+        <div>
+          <form action="https://api.web3forms.com/submit" method="POST" id="form" >
+            <input type="hidden" name="access_key" value="81018c34-8ea8-480d-8af1-6dcb526855e6" />
+            <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+            <input type="checkbox" name="botcheck" id="" style="display: none;" />
+  
+            <div class="two_fields">
+              <div class="small_fields left_field">
+
+                <input type="text" name="name" id="first_name" placeholder="First Name" required />
+              </div>
+              <div class="small_fields right_field">
+
+                <input type="text" name="last_name" id="lname" placeholder="Last Name" required />
+              </div>
+            </div>
+
+
+  
+            <div class="two_fields">
+              <div class="small_fields left_field">
+          
+                <input type="email" name="email" id="email" placeholder="Email address" required/>
+              </div>
+  
+              <div class="small_fields right_field">
+
+                <input type="text" name="phone" id="phone" placeholder="Phone number" required />
+              </div>
+            </div>
+            <div class="textfield">
+
+  
+              <textarea rows="2" name="message" id="message" placeholder="Your Message" required></textarea>
+            </div>
+            <div>
+              <button type="submit" class="linkhover" >
+                <p>Send Email </p>
+              </button>
+            </div>
+            <p id="result"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<footer id="Footer" style="position: relative; overflow: hidden; z-index: 0;">
+        
+  <div class="FooterRectangleContainer">
+    <svg width="80vw" height="80vh"  viewBox="0 0 750 750">
+
+      <g transform="rotate(-134.99992 382.63300163 382.63300163)">
+        <rect class="bottomshadow1" width="404" height="81.601"  opacity="0.5"x="218.967" y="161.008" fill="rgb(0,0,0)"/> 
+        <rect class="bottomshadow5"  width="619" height="103.856" opacity="0.5"x="73.133" y="252.315" fill="rgb(0,0,0)"/>
+        <rect class="bottomshadow4"  width="551" height="56.049" opacity="0.5"x="129.133" y="365.886" fill="rgb(0,0,0)"/>
+        <rect class="bottomshadow3"  width="563" height="99.735" opacity="0.5"x="98.967" y="431.475" fill="rgb(0,0,0)"/>
+        <rect class="bottomshadow2" width="418" height="83.25" opacity="0.5"x="204.967" y="541.008" fill="rgb(0,0,0)"/>
+
+       <rect class="bottomrect1" width="404" height="81.601"  x="218.967" y="151.008" fill="rgb(37,65,178)"/> 
+       <rect class="bottomrect5"  width="619" height="103.856" x="73.133" y="242.315" fill="rgb(37,65,178)"/>
+       <rect class="bottomrect4"  width="551" height="56.049" x="129.133" y="355.886" fill="rgb(37,65,178)"/>
+       <rect class="bottomrect3"  width="563" height="99.735" x="98.967" y="421.475" fill="rgb(37,65,178)"/>
+       <rect class="bottomrect2" width="418" height="83.25" x="204.967" y="531.008" fill="rgb(37,65,178)"/>
+       
+</g>
+      </svg>
+      </div>
+
+        <div class="FooterDiv">
+     
+          <a href="mailto:joshsgt2004@gmail.com"><h2><span style="color: rgb(53, 179, 252)">joshsgt2004</span>@gmail<span style="color: rgb(53, 179, 252)">.</span>com</h2></a><br>
+          <h3>Contact <span style="color: rgb(53, 179, 252)">JT Digital</span>  for any enquiries regarding:</h3> 
+          <ul style="margin-top: 1vh;">
+            <li><p>Web Design</p></li>
+            <li><p>Digital Marketing</p></li>
+            <li><p>Digital Design</p></li>
+            <li><p>Analytics</p></li>
+            <li><p>Project Management</p></li>
+            <li><p>Freelance</p></li>
+          </ul>
+ 
+          <div class="FooterSocials">
+            <a href="mailto:joshsgt2004@gmail.com" target="_blank" style="margin-left: 0;" class="fa fa-envelope linkhover footer-icon"></a>
+            <a href="https://twitter.com/JT_WebDesigns" target="_blank" class="fa fa-facebook linkhover footer-icon"></a>
+            <a href="https://www.instagram.com/jt_webdesigns/" target="_blank" class="fa fa-instagram linkhover footer-icon"></a>
+            <a href="https://www.linkedin.com/in/joshsgt20/" target="_blank" class="fa fa-linkedin linkhover footer-icon"></a>    
+         
+          </div>
+     
+          <ul class="FooterLinks">
+            <li style="margin-right: 3vw"><a href="index.html" class="linkhover">Home</a></li>
+            <li style="margin-right: 3vw"><a href="Services.html" class="linkhover">Services</a></li>
+            <li style="margin-right: 3vw"><a href="Experience.html" class="linkhover">Experience</a></li>
+            <li style="margin-right: 3vw"><a href="Contact.html" class="linkhover">Contact</a></li>
+          </ul>
+
+                </div>
+    
+  </footer>
+</main>
+</div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" 
+  integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg==" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" 
+  integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw==" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.7/dist/barba.umd.min.js"></script>
+<script src="js/app.js"></script>
+  <script src="js/helper.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/hover.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+
+
+</body>
+</html>
+
