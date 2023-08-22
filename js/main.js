@@ -244,9 +244,10 @@ function contentAnimation(container) {
         scrub: 1,
         toggleActions: "play none none none"
       },
-      y:50,
-      opacity: 0,
-      ease: 'power4.out'
+      duration: 0.5,
+      scaleY: 0,
+      autoAlpha: 0,
+      ease: 'linear.easeNone'
     })
     
     .from(".ContactImg",{
@@ -302,7 +303,8 @@ function contentAnimation(container) {
       y:50,
       opacity: 0,
       stagger: 0.3,
-      ease: 'power4.out'
+      ease: 'power4.out',
+      
     })
 
     .from(".GridImage4",{
@@ -359,68 +361,191 @@ function contentAnimation(container) {
 
 
 
-
-    .from(".main1",{
+    .from("#Eccomerce",{
       scrollTrigger: {
-        trigger: ".panel1",
-        pin: ".panel1",
-        pinSpacing: false,
-        start: "top top",
-        end: "+=100",
-        scrub: 2,
-         }
+        trigger: "#ScrollStart",
+        start: "top 65%",
+        end: "top 10%",
+        scrub: 3,
+        toggleActions: "play none none none",
+      },
+      x:-400,
+      opacity: 0,
+      stagger: 0.3,
+      ease: 'power4.out'
     })
 
-    .from(".main2",{
+    .from("#MoodsSite",{
       scrollTrigger: {
-        trigger: ".panel2",
-        pin: ".panel2",
-        pinSpacing: false,
-        start: "top top",
-        end: "+=100",
-        scrub: 2,
-
-
-      }
-    })
-    .from(".main3",{
-      scrollTrigger: {
-        trigger: ".panel3",
-        pin: ".panel3",
-        pinSpacing: false,
-        start: "top top",
-        end: "+=100",
-        scrub: 2,
-  
-      }
+        trigger: "#Eccomerce",
+        start: "top 50%",
+        end: "top 20%",
+        scrub: 3,
+        toggleActions: "play none none none",
+      },
+      x:400,
+      opacity: 0,
+      stagger: 0.3,
+      ease: 'power4.out'
     })
     
-    .from(".main4",{
+
+    .from("#UniSite",{
       scrollTrigger: {
-        trigger: ".panel4",
-        pin: ".panel4",
-        pinSpacing: false,
-        start: "top top",
-        end: "+=100",
-        scrub: 2,
-  
-      }
+        trigger: "#MoodsSite",
+        start: "top 50%",
+        end: "top 20%",
+        scrub: 3,
+        toggleActions: "play none none none",
+      },
+      x:-400,
+      opacity: 0,
+      stagger: 0.3,
+      ease: 'power4.out'
     })
 
-    .from(".main5",{
+    .from("#AdharSite",{
       scrollTrigger: {
-        trigger: ".panel5",
-        pin: ".panel4",
-        pinSpacing: false,
-        start: "top top",
-        end: "+=100",
-        scrub: 2,
-  
-      }
+        trigger: "#UniSite",
+        start: "top 50%",
+        end: "top 20%",
+        scrub: 3,
+        toggleActions: "play none none none",
+      },
+      x:400,
+      opacity: 0,
+      stagger: 0.3,
+      ease: 'power4.out'
     })
 
 
+
+    .from(".FlexWideGraphics img",{
+      scrollTrigger: {
+        trigger: ".MarketingSection",
+        start: "top 50%",
+        end: "top 20%",
+        scrub: 3,
+        toggleActions: "play none none none",
+      },
+      y:50,
+      opacity: 0,
+      stagger: 0.2,
+      ease: 'power4.out'
+    })
+
+    .from(".SocialMediaImages img",{
+      scrollTrigger: {
+        trigger: "#AwarenessMedia",
+        start: "top 50%",
+        end: "top 20%",
+        scrub: 3,
+        toggleActions: "play none none none",
+      },
+      y:50,
+      opacity: 0,
+      stagger: 0.2,
+      ease: 'power4.out'
+    })
+
+    .from(".FlexSocialGraphics img",{
+      scrollTrigger: {
+        trigger: "#DigitalDesignHeader",
+        start: "top 50%",
+        end: "top 20%",
+        scrub: 3,
+        toggleActions: "play none none none",
+      },
+      y:50,
+      opacity: 0,
+      stagger: 0.2,
+      ease: 'power4.out'
+    })
+
+    .from(".FlexPrinted img",{
+      scrollTrigger: {
+        trigger: "#SocialMediaheader",
+        start: "top 50%",
+        end: "top 20%",
+        scrub: 3,
+        toggleActions: "play none none none",
+      },
+      y:50,
+      opacity: 0,
+      stagger: 0.2,
+      ease: 'power4.out'
+    })
+
+
+    .from("#MoodsImage",{
+      scrollTrigger: {
+        trigger: ".UIDesign",
+        start: "top 80%",
+        end: "top 70%",
+        scrub: 1,
+        toggleActions: "play none none none",
+      },
+      x:400,
+      opacity: 0,
+      ease: 'power4.out'
+    })
+
+    .from("#LinksImage",{
+      scrollTrigger: {
+        trigger: "#MoodsImage",
+        start: "top 80%",
+        end: "top 70%",
+        scrub: 2,
+        toggleActions: "play none none none",
+      },
+      x:-400,
+      opacity: 0,
+      ease: 'power4.out'
+    })
+
+    .from("#CameraPhoto",{
+      scrollTrigger: {
+        trigger: "#CameraPhoto",
+        start: "top 90%",
+        end: "top 60%",
+        scrub: 2,
+        toggleActions: "play none none none",
+      },
+      duration: 0.5,
+      scaleY: 0,
+      autoAlpha: 0,
+      ease: 'linear.easeNone'
+    })
+
+    .from("#AdditionalMarketing",{
+      scrollTrigger: {
+        trigger: "#AdditionalMarketing",
+        start: "top 90%",
+        end: "top 60%",
+        scrub: 3,
+        toggleActions: "play none none none",
+      },
+      duration: 0.5,
+      scaleY: 0,
+      autoAlpha: 0,
+      ease: 'linear.easeNone'
+    })
     
+    .from(".wide-image",{
+      scrollTrigger: {
+        trigger: ".wide-image",
+        start: "top 90%",
+        end: "top 60%",
+        scrub: 3,
+        toggleActions: "play none none none",
+      },
+      y:50,
+      opacity: 0,
+      ease: 'power1'
+    })
+    
+
+  
     .call(scrollAnimation, [container], 'start')
 
 
