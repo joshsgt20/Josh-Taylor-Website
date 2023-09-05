@@ -177,7 +177,7 @@ h2 {
 
 h3 {
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 520;
 }
 
 h4 {
@@ -264,7 +264,7 @@ section, footer{
 }
 
 #Title {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 900;
   font-family: 'Lato';
   margin: .5vh 0vw;
@@ -715,6 +715,7 @@ margin: 2vh 0;;
   width: 60%;
   margin: 2vh 20%;
   -webkit-filter: grayscale(100%);filter: grayscale(100%);
+  box-shadow: 0vw .5vw 1vw 0.1vw #d4d3d3;
 }
 
 
@@ -846,7 +847,7 @@ color: rgb(53, 179, 252);
 transition: .3s;
 }
 
-
+/* Portfolio Page CSS */
 .TopSection {
   padding: 13vh 8vw;
   text-align: center;
@@ -939,12 +940,128 @@ input[type=radio] {
   z-index: 1;
   color: rgb(53, 179, 252);
   
-  .images {
-    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+  .slideimages {
+    box-shadow: 0vw .5vw 1vw 0.1vw #000000;
   }
 
 
 
+}
+
+
+
+
+.UIDesign a {
+  transition: 0.3s;
+}
+
+.UIDesign a:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+
+.UIDesign img {
+  width: 50%;
+  transition: 0.3s;
+  margin: 3vh 25%;
+}
+
+.Flipcard {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin: 2vh 0vw 3vh 0vw;
+}
+
+
+.Inner-Flipcard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+.Frontcover img{
+  width: 75%;
+  align-self: center;
+}
+.Frontcover .Mobile{
+  width: 23%;
+}
+.Backcover img{
+  display: none;
+  }
+
+.SocialMediaImages{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 5vh 0vw 2vh 0vw;
+  flex-wrap: wrap;
+}
+
+.SocialMediaImages img{
+  width: 75%;
+  margin-bottom: 5vh;
+  box-shadow: 0vw .5vw 1vw 0.1vw #000000;
+}
+
+.FlexWideGraphics{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 5vh 0vw 2vh 0vw;
+  flex-wrap: wrap;
+}
+
+.FlexWideGraphics img{
+  width: 80%;
+  box-shadow: 0vw .5vw 1vw 0.1vw #000000;
+  margin-bottom: 5vh;
+}
+
+
+.FlexSocialGraphics{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 5vh 0vw 2vh 0vw;
+  flex-wrap: wrap;
+}
+
+.FlexSocialGraphics img{
+  width: 60%;
+  margin-bottom: 5vh;
+  box-shadow: 0vw .5vw 1vw 0.1vw #d4d3d3;
+}
+
+.FlexPrinted img{
+  width: 75%;
+  margin-bottom: 5vh;
+  box-shadow: 0vw .5vw 1vw 0.1vw #d4d3d3;
+}
+
+
+.FlexPrinted, .FlexPrintedA4{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 5vh 0vw 2vh 0vw;
+  flex-wrap: wrap;
+}
+
+.FloatedImage{
+  width: 60%;
+  margin: 2vh 20%;
+}
+
+.wide-image{
+  width: 100%;
+  margin: 2vh 0;
 }
 
 /*Experience page CSS */
@@ -962,8 +1079,70 @@ input[type=radio] {
 .BSHLogos img{
   width: 45%;
   object-fit:cover;
-  margin: .5vh 1vw
+  margin: 2vh 1vw
   
+}
+
+.SkillsOverview{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left;
+  margin: 1vh 0vw 5vh 0vw;
+}
+
+.SkillExample{
+  width: 100%;
+  margin-top: 4vh;
+}
+
+.SkillBar {
+  width: 100%;
+  background-color: #d7d7d7;
+  border: .1vw solid #2541B2;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 1.2vh;
+  padding-bottom: 1.2vh;
+  color: white;
+}
+
+.web {width: 92%; background-color:#2541B2 }
+.digital {width: 90%; background-color: #2541B2}
+.offline {width: 85%; background-color: #2541B2}
+.design {width: 80%; background-color: #2541B2}
+.scrum {width: 80%; background-color: #2541B2}
+.project {width: 70%; background-color: #2541B2}
+.ui {width: 85%; background-color: #2541B2}
+.adobe {width: 85%; background-color: #2541B2}
+
+
+
+
+
+.ProjectGrid img{
+  width: 80%;
+  box-shadow: 0vw .5vw 1vw 0.1vw #d4d3d3;
+  margin: 4vh 10%
+
+
+}
+
+
+
+.RightFlex img{
+  width: 80%;
+  margin: 4vh 10%;
+  box-shadow: 0vw .5vw 1vw 0.1vw #d4d3d3;
+}
+
+.Rawnet img{
+  box-shadow: 0vw .5vw 1vw 0.1vw #d4d3d3;
+  width: 80%;
+  margin: 4vh 10%;
 }
 
 @media screen and (min-width: 576px) {
@@ -1171,7 +1350,7 @@ scale: 1.05;
   }
 
   h3 {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
   }
   h4 {
     font-size: 1.05rem;
@@ -1335,6 +1514,8 @@ scale: 1.05;
     }
 
 
+  /*Portfolio page CSS */
+
     .slideshowcontainer {
       max-width: 75%;
       height: 60vh;
@@ -1347,14 +1528,175 @@ scale: 1.05;
 
 
 
+    
+    .Flipcard {
+      margin: 0vh 0vw;
+}
+
+.UIDesign {
+  margin-top: 3vh;
+  display: grid;
+  grid-template-columns: 1fr .1fr 1fr;
+  grid-template-areas:
+    "MoodsText . MoodsImage"
+    "LinksImage . LinksText";
+    grid-row-gap: 5vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.UIDesign img {
+width: 60%;
+transition: 0.3s;
+margin: 0 0;
+
+}
+
+#LinksImage {
+margin: 0vh 0%;
+}
+
+#MoodsImage {
+  margin: 0vh 0 0 30%;
+}
+.SocialMediaImages{
+  justify-content: space-evenly;
+
+}
+
+.SocialMediaImages img{
+  width: 43%;
+
+}
+
+
+.FlexWideGraphics{
+justify-content: space-evenly;
+}
+
+.FlexWideGraphics img{
+width: 42%;
+}
+
+.FlexSocialGraphics{
+justify-content: space-evenly;
+}
+
+.FlexSocialGraphics img{
+width: 32%;
+}
+
+.FlexPrinted, .FlexPrintedA4{
+justify-content: space-evenly;
+align-items: center;
+}
+
+.FlexPrinted img{
+width: 31%;
+}
+
+
+.Websites {
+  display: grid;
+  margin-top: 4vh;
+  grid-template-columns: 1fr .1fr 1fr;
+  grid-template-areas: 
+  "EcommerceImage . EcommerceText"
+  "MoodsText . MoodsSite"
+  "UniSite . AwarenessText"
+  "AdharText . AdharSite"
+  "DegreesText . DegSite";
+  align-items: center;
+  grid-row-gap: 5vh;
+  
+}
+
+.Frontcover img{
+width: 100%
+}
+.Frontcover .Mobile{
+width: 30%
+}
+
+
+.FloatedImage{
+width: 35%;
+margin: 2vh 0%;
+float: right;
+margin-right: 0;
+}
+
+.wide-image{
+width: 90%;
+margin: 2vh 5%
+}
+
     /*Experience page CSS */
 .BSHLogos img{
   width: 22%;
   object-fit:cover;
-  margin: .5vh 0vw
+  margin: 3vh 0vw
   
 }
 
+
+.SkillExample{
+  width: 45%;
+  margin-top: 4vh;
+}
+
+
+
+
+.ProjectGrid{
+  display: grid;
+  grid-template-columns: 1fr .1fr 1fr;
+  grid-template-areas:
+  "Project1 . Project1Img"
+  "Project2Img . Project2 ";
+  grid-row-gap: 7vh;
+  align-items: center;
+  margin: 5vh 0vw 7vh 0vw;
+}
+
+.ProjectGrid img{
+  width: 100%;
+  box-shadow: 0vw .5vw 1vw 0.1vw #d4d3d3;
+  margin: 0vh 0%
+
+
+}
+
+
+.RightFlex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5vh 0vw;
+
+}
+
+.Rawnet{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5vh 0vw;
+}
+
+
+.RightFlex img{
+  width: 45%;
+  margin: 0vh 0%;
+  margin-left: 3vw
+}
+
+.Rawnet img{
+  width: 45%;
+  margin: 0vh 0%;
+  margin-right: 3vw
+}
 }
 
 /* Laptop Screen size */
@@ -1406,12 +1748,12 @@ cursor: none;
   }
 
   h2 {
-    font-size: 1.4rem;
+    font-size: 1.45rem;
 
   }
   
   h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   h4 {
@@ -1508,16 +1850,16 @@ cursor: none;
   }
 
   .ScrumImage1{
-    width: 12%;
+    width: 9%;
     margin-left: 0%;
   }
   .ScrumImage2{
-    width: 12%;
+    width: 9%;
     margin-left: 5%;
   }
   
   .ScrumImage1 img, .ScrumImage2 img{
-    width: 12%;
+    width: 9%;
   }
 
   .Card{
@@ -1563,21 +1905,192 @@ cursor: none;
     }
 
 
+        /* Portfolio Page CSS */
+
     .slideshowcontainer {
       max-width: 70%;
       height: 65vh;
 
     }
 
+
+
+
+    
+    .Websites {
+      grid-template-columns: 1fr .15fr 1fr;
+      grid-template-areas: 
+      "EcommerceImage . EcommerceText"
+      "MoodsText . MoodsSite"
+      "UniSite . AwarenessText"
+      "AdharText . AdharSite"
+      "DegreesText . DegSite";
+      grid-row-gap: 18vh;
+      margin-top: 6vh
+      
+    }
+
+    .UIDesign {
+      grid-template-columns: 1fr .5fr 1fr;
+      grid-template-areas:
+        "MoodsText MoodsText MoodsImage"
+        "LinksImage LinksText LinksText";
+        grid-row-gap: 10vh;
+    }
+
+
+    .UIDesign img {
+    width: 55%;                           
+  }
+  #LinksImage {
+    margin: 0vh 0%;
+    }
+    
+    #MoodsImage {
+      margin: 0vh 0 0 45%;
+    }
+    .Flipcard {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      perspective: 50rem;
+      align-content: center;
+      
+    }
+    
+
+
+    .Inner-Flipcard {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+      align-items: center;
+      justify-content: center;
+    
+    }
+
+    .Frontcover, .Backcover {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden; 
+      backface-visibility: hidden;
+      align-items: center;
+      align-content: center;
+  
+      
+    }
+    
+    
+    .Backcover {
+      transform: rotateY(180deg);
+      z-index: 0;
+      
+    }
+    
+    .Backcover img{
+      display: inline;
+      height: 100%;
+    
+    }
+    
+
+  .SocialMediaImages img{
+    width: 23%;
+  
+  }
+
+  .FlexWideGraphics img{
+      width: 40%;
+  
+    }
+
+  .FlexSocialGraphics img{
+    width: 28%;
+  }
+  
+  .FlexPrinted img{
+    width: 26%;
+  }
+  .Frontcover {
+      display: flex;
+        
+      }
+
+      .Flipcard:hover .Inner-Flipcard {
+        transform: rotateY(180deg);
+      }
+  
+
+      .Frontcover img{
+        width: 100%;
+
+      }
+      
+      .Frontcover .Mobile{
+        display: none
+      }
+
+      .wide-image{
+    width: 80%;
+    margin: 2vh 10%
+  }
       /* Experience Page CSS */
 
     .BSHLogos img{
       width: 20%;
-      margin: 1vh 0vw
+      margin: 4vh 0vw
       
     }
 
+    .SkillExample{
+      width: 30%;
+      margin-top: 5vh;
+    }
 
+    
+
+.ProjectGrid{
+  display: grid;
+  grid-template-columns: 1fr .2fr 1fr;
+  grid-template-areas:
+  "Project1 . Project1Img"
+  "Project2Img . Project2";
+  grid-row-gap: 9vh;
+  align-items: center;
+  margin: 7vh 0vw 8vh 0vw;
+}
+
+
+.RightFlex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 6vh 0vw;
+
+}
+
+.Rawnet{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 6vh 0vw;
+}
+
+
+.RightFlex img{
+  width: 32%;
+  margin-left: 3vw
+}
+
+.Rawnet img{
+  width: 32%;
+  margin-right: 3vw
+}
 }
 
 
@@ -1598,7 +2111,7 @@ cursor: none;
   }
   
   h3 {
-    font-size: 1.4rem;
+    font-size: 1.45rem;
   }
 
   h4 {
@@ -1772,7 +2285,7 @@ cursor: none;
 
   }
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   h4 {
@@ -1879,7 +2392,7 @@ cursor: none;
         font-size:2.2rem;
       }
 
-      
+      /* Portfolio Page */
 .slideshowcontainer {
   max-width: 60%;
   height: 65vh
@@ -1892,13 +2405,144 @@ cursor: none;
 }
 
 
+
+.Websites {
+  margin-top: 8vh;
+grid-template-columns: 1fr .15fr 1fr;
+grid-row-gap: 17vh;
+grid-template-areas: 
+"EcommerceImage . EcommerceText"
+"MoodsText . MoodsSite"
+"UniSite . AwarenessText"
+"AdharText . AdharSite"
+"DegreesText . DegSite";
+
+
+}
+
+.UIDesign {
+margin-top: 5vh;
+grid-template-columns: 1fr .5fr 1fr;
+grid-template-areas:
+  "MoodsText MoodsText MoodsImage"
+  "LinksImage LinksText LinksText";
+  grid-row-gap: 12vh;
+}
+
+.UIDesign img {
+width: 50%;                            
+}
+
+
+
+#MoodsImage {
+margin: 0vh 0 0 50%;
+}
+
+
+
+.SocialMediaImages img{
+width: 22%;
+
+}
+
+
+.FlexSocialGraphics img{
+width: 23%;
+}
+
+.FlexPrinted img{
+width: 20%;
+}
+
+.Frontcover {
+display: flex;
+  
+}
+
+.Flipcard:hover .Inner-Flipcard {
+  transform: rotateY(180deg);
+}
+
+
+.Frontcover img{
+  width: 100%;
+
+}
+
+.Frontcover .Mobile{
+  display: none
+}
+.wide-image{
+width: 70%;
+margin: 2vh 15%
+}
+
 /* Experience Page */
 
 
 .BSHLogos img{
   width: 18%;
-  margin: 1vh 0vw
+  margin: 6vh 0vw
   
+}
+
+.SkillExample{
+  width: 22%;
+  margin-top: 5vh;
+}
+
+
+
+.ProjectGrid{
+  display: grid;
+  grid-template-columns: 1fr .1fr 1fr;
+  grid-row-gap: 10vh;
+  align-items: center;
+  margin: 6vh 0vw 9vh 0vw;
+}
+
+.ProjectGrid img{
+  width: 85%;
+  box-shadow: 0vw .5vw 1vw 0.1vw #d4d3d3;
+
+
+}
+
+.SiemensImage{
+  margin-left: 15%
+
+}
+
+.NEFFImage{
+  margin-right: 15%
+
+}
+
+.RightFlex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5vh 0vw;
+
+}
+
+.RightFlex img{
+  width: 35%;
+  margin-left: 5vw;
+  box-shadow: 0vw .5vw 1vw 0.1vw #d4d3d3;
+}
+.Rawnet{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5vh 0vw;
+}
+
+.Rawnet img{
+  width: 30%;
+  box-shadow: 0vw .5vw 1vw 0.1vw #d4d3d3;
+  margin-right: 5vw
 }
 }
 /*

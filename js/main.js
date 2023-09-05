@@ -506,8 +506,8 @@ function contentAnimation(container) {
     .from("#CameraPhoto",{
       scrollTrigger: {
         trigger: "#CameraPhoto",
-        start: "top 90%",
-        end: "top 60%",
+        start: "top 95%",
+        end: "top 70%",
         scrub: 2,
         toggleActions: "play none none none",
       },
@@ -545,9 +545,143 @@ function contentAnimation(container) {
     })
     
 
+    .from(".skills",{
+      scrollTrigger: {
+        trigger: ".SkillsOverview",
+        start: "top 90%",
+        end: "top 60%",
+        scrub: 3,
+        toggleActions: "play none none none",
+      },
+      scaleX:0,
+      transformOrigin:'left',
+      ease: 'power1'
+    })
+
+
+    .from(".BSHLogos img",{
+      scrollTrigger: {
+        trigger: "#BSH",
+        start: "top 60%",
+        end: "top 30%",
+        scrub: 3,
+        toggleActions: "play none none none",
+      },
+      y:50,
+      opacity: 0,
+      stagger: 0.2,
+      ease: 'power4.out'
+    })
+
+    .from(".ScrumCollage",{
+      scrollTrigger: {
+        trigger: ".ScrumCollage",
+        start: "top 95%",
+        end: "top 70%",
+        scrub: 2,
+        toggleActions: "play none none none",
+      },
+      duration: 0.5,
+      scaleY: 0,
+      autoAlpha: 0,
+      ease: 'linear.easeNone'
+    })
+
+
+    .from(".SiemensImage",{
+      scrollTrigger: {
+        trigger: ".SiemensImage",
+        start: "top 80%",
+        end: "top 40%",
+        scrub: 1,
+        toggleActions: "play none none none",
+      },
+      x:400,
+      opacity: 0,
+      ease: 'power4'
+    })
   
+
+    .from(".NEFFImage",{
+      scrollTrigger: {
+        trigger: ".NEFFImage",
+        start: "top 80%",
+        end: "top 40%",
+        scrub: 1,
+        toggleActions: "play none none none",
+      },
+      x:-400,
+      opacity: 0,
+      ease: 'power4'
+    })
+
+
+    .from("#Reesink",{
+      scrollTrigger: {
+        trigger: "#Reesink",
+        start: "top 95%",
+        end: "top 70%",
+        scrub: 2,
+        toggleActions: "play none none none",
+      },
+      duration: 0.5,
+      scaleY: 0,
+      autoAlpha: 0,
+      ease: 'linear.easeNone'
+    })
+
+
+    .from("#Rawnet",{
+      scrollTrigger: {
+        trigger: "#Rawnet",
+        start: "top 95%",
+        end: "top 70%",
+        scrub: 2,
+        toggleActions: "play none none none",
+      },
+      duration: 0.5,
+      scaleY: 0,
+      autoAlpha: 0,
+      ease: 'linear.easeNone'
+    })
+
+
+
+
+    .from("#AdharPhoto",{
+      scrollTrigger: {
+        trigger: "#AdharPhoto",
+        start: "top 95%",
+        end: "top 70%",
+        scrub: 2,
+        toggleActions: "play none none none",
+      },
+      duration: 0.5,
+      scaleY: 0,
+      autoAlpha: 0,
+      ease: 'linear.easeNone'
+    })
+
+
+    .from(".experienceimages",{
+      scrollTrigger: {
+        trigger: "#OtherBusinesses",
+        start: "top 70%",
+        end: "top 40%",
+        scrub: 3,
+        toggleActions: "play none none none",
+      },
+      y:50,
+      opacity: 0,
+      stagger: 0.2,
+      ease: 'power4.out'
+    })
+
+
     .call(scrollAnimation, [container], 'start')
 
+
+    
 
 
     
