@@ -602,7 +602,7 @@ span{
   border: 0.3vh solid rgb(53, 179, 252);
   box-shadow: 0rem 0rem 0.5rem rgb(53, 179, 252); 
   margin-top: 3vh;
-  width: 11vw;
+  width: 13vw;
 }
 
 .SocialMedia .fa:hover, .MobileMenu .fa:hover {
@@ -630,7 +630,7 @@ transform: scale(1.1);
   box-shadow: 0rem 0rem 0.5rem rgb(53, 179, 252); 
     text-align: center;
     justify-content: center;
-    width: 13vw;
+    width: 14vw;
 }
 
 
