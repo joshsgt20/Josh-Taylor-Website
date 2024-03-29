@@ -1603,6 +1603,7 @@ width: 31%;
   margin-top: 4vh;
   grid-template-columns: 1fr .1fr 1fr;
   grid-template-areas: 
+  "SJRText . SJRSite"
   "EcommerceImage . EcommerceText"
   "MoodsText . MoodsSite"
   "UniSite . AwarenessText"
@@ -1920,6 +1921,7 @@ cursor: none;
     .Websites {
       grid-template-columns: 1fr .15fr 1fr;
       grid-template-areas: 
+      "SJRText . SJRSite"
       "EcommerceImage . EcommerceText"
       "MoodsText . MoodsSite"
       "UniSite . AwarenessText"
@@ -2411,6 +2413,7 @@ cursor: none;
 grid-template-columns: 1fr .15fr 1fr;
 grid-row-gap: 17vh;
 grid-template-areas: 
+"SJRText . SJRSite"
 "EcommerceImage . EcommerceText"
 "MoodsText . MoodsSite"
 "UniSite . AwarenessText"
