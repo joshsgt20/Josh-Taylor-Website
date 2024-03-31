@@ -360,10 +360,38 @@ function contentAnimation(container) {
     })
 
 
+    .from("#Stars .fa",{
+      scrollTrigger: {
+        trigger: "#Testimonial",
+        start: "top 85%",
+        end: "top 60%",
+        scrub: 3,
+        toggleActions: "play none none none",
+      },
+      y:20,
+      opacity: 0,
+      stagger: 0.3,
+      ease: 'power4.out'
+    })
+
+    
+    .from("#SJRSite",{
+      scrollTrigger: {
+        trigger: "#Testimonial",
+        start: "top 65%",
+        end: "top 10%",
+        scrub: 3,
+        toggleActions: "play none none none",
+      },
+      x:400,
+      opacity: 0,
+      stagger: 0.3,
+      ease: 'power4.out'
+    })
 
     .from("#Eccomerce",{
       scrollTrigger: {
-        trigger: "#ScrollStart",
+        trigger: "#Testimonial",
         start: "top 65%",
         end: "top 10%",
         scrub: 3,
